@@ -1,0 +1,182 @@
+{
+ "au": {
+  "A1": [
+   {
+    "file": "runs/au/A1.json",
+    "config": "a_keyword"
+   }
+  ],
+  "A2": [
+   {
+    "file": "runs/au/A2A3.json",
+    "config": "e_dense"
+   }
+  ],
+  "A3": [
+   {
+    "file": "runs/au/A2A3.json",
+    "config": "f_dense_llm"
+   }
+  ],
+  "A4": [
+   {
+    "file": "runs/au/A4.json",
+    "config": "b_fused"
+   }
+  ],
+  "A5": [
+   {
+    "file": "runs/au/A5.json",
+    "config": "d_agent"
+   }
+  ],
+  "B1": [
+   {
+    "file": "runs/au/B1.json",
+    "config": "d_agent"
+   }
+  ],
+  "B2": [
+   {
+    "file": "runs/au/B2.json",
+    "config": "d_agent"
+   }
+  ],
+  "B3": [
+   {
+    "file": "runs/au/B3.json",
+    "config": "c_routed"
+   }
+  ]
+ },
+ "uk": {
+  "A1": [
+   {
+    "file": "runs/uk/A1.json",
+    "config": "a_keyword"
+   }
+  ],
+  "A2": [
+   {
+    "file": "runs/uk/A2A3.json",
+    "config": "e_dense"
+   }
+  ],
+  "A3": [
+   {
+    "file": "runs/uk/A2A3.json",
+    "config": "f_dense_llm"
+   }
+  ],
+  "A4": [
+   {
+    "file": "runs/uk/A4.json",
+    "config": "b_fused"
+   }
+  ],
+  "A5": [
+   {
+    "file": "runs/uk/A5.json",
+    "config": "d_agent"
+   }
+  ],
+  "B1": [
+   {
+    "file": "runs/uk/B1.json",
+    "config": "d_agent"
+   }
+  ],
+  "B2": [
+   {
+    "file": "runs/uk/B2.json",
+    "config": "d_agent"
+   }
+  ],
+  "B3": [
+   {
+    "file": "runs/uk/B3.json",
+    "config": "c_routed"
+   }
+  ]
+ },
+ "us": {
+  "A1": [
+   {
+    "file": "runs/us/A1.json",
+    "config": "a_keyword"
+   }
+  ],
+  "A2": [
+   {
+    "file": "runs/us/A2A3.json",
+    "config": "e_dense"
+   }
+  ],
+  "A3": [
+   {
+    "file": "runs/us/A2A3.json",
+    "config": "f_dense_llm"
+   }
+  ],
+  "A4": [
+   {
+    "file": "runs/us/A4.json",
+    "config": "b_fused"
+   }
+  ],
+  "A5": [
+   {
+    "file": "runs/us/A5.json",
+    "config": "d_agent"
+   }
+  ],
+  "B1": [
+   {
+    "file": "runs/us/B1.json",
+    "config": "d_agent"
+   }
+  ],
+  "B2": [
+   {
+    "file": "runs/us/B2.json",
+    "config": "d_agent"
+   }
+  ],
+  "B3": [
+   {
+    "file": "runs/us/B3.json",
+    "config": "c_routed"
+   }
+  ]
+ },
+ "clarify": {
+  "au": {
+   "C1": {
+    "file": "runs/au/C1.json",
+    "config": "d_agent"
+   },
+   "C2": {
+    "file": "runs/au/C2.json",
+    "config": "d_agent"
+   },
+   "C3": {
+    "file": "runs/au/C3.json",
+    "config": "d_agent"
+   }
+  },
+  "uk": {
+   "C1": {
+    "file": "runs/uk/C1.json",
+    "config": "d_agent"
+   },
+   "C2": {
+    "file": "runs/uk/C2.json",
+    "config": "d_agent"
+   },
+   "C3": {
+    "file": "runs/uk/C3.json",
+    "config": "d_agent"
+   }
+  }
+ }
+}

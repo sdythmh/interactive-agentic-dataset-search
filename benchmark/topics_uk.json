@@ -1,0 +1,506 @@
+{
+ "corpus": "uk",
+ "portal": "data.gov.uk",
+ "topics": [
+  {
+   "topic": "topic-01",
+   "narrative": "Relevant records report numbers of cattle -- herd sizes, cattle populations, births, deaths or movements of cattle between holdings -- or dairy herd and milk production figures tied to cattle. Data at any geographic level and from any publisher count. Records about other livestock only (sheep, pigs, poultry), about animal disease or veterinary medicines without cattle counts, or about agricultural land use in general do not count.",
+   "sub_questions": {
+    "L1": "cattle population and movement data",
+    "L2": "cattle numbers",
+    "L3": "How many cows are kept on farms in each part of the country?",
+    "L4": "catle populaton and movment data"
+   }
+  },
+  {
+   "topic": "topic-02",
+   "narrative": "Relevant records report counts or rates of human deaths: death registrations, mortality rates, causes of death, excess or avoidable mortality, and life expectancy derived from mortality. Mortality indicators for hospitals or health trusts count. Tables from national statistics offices, health bodies or councils count at any geographic level. Records about disease prevalence or hospital activity without death counts or rates, about funerals, cemeteries or burial grounds, or about animal deaths do not count.",
+   "sub_questions": {
+    "L1": "death registrations and mortality statistics",
+    "L2": "mortality data",
+    "L3": "Where in the country do people die younger than elsewhere?",
+    "L4": "death registartions and mortality statisitcs"
+   }
+  },
+  {
+   "topic": "topic-03",
+   "narrative": "Relevant records report educational outcomes of pupils in schools: exam or test results, key stage attainment, GCSE or A-level results, progress measures or school performance tables, at school, local-authority or national level. Records about school locations, catchment areas, admissions, the school workforce, funding or inspections without attainment results do not count; nor do outcomes of higher education, further education or adult skills training.",
+   "sub_questions": {
+    "L1": "pupil attainment and school performance results",
+    "L2": "school results",
+    "L3": "Which schools get the best exam results?",
+    "L4": "pupil attainmnet and school perfomance results"
+   }
+  },
+  {
+   "topic": "topic-04",
+   "narrative": "Relevant records hold measurements of the chemical composition of geological or environmental materials -- rocks, soils, stream or marine sediments, minerals or pore waters -- including elemental, isotopic or organic geochemistry. Survey datasets, laboratory analyses and sample databases count, from any publisher. Records that describe geology only as maps, lithology or stratigraphy without chemical measurements do not count; nor do water quality or air quality monitoring records.",
+   "sub_questions": {
+    "L1": "geochemical analyses of rock, soil and sediment samples",
+    "L2": "geochemistry data",
+    "L3": "What are the rocks and soils at a site made of chemically?",
+    "L4": "geochemcal analyses of rock and sediment samples"
+   }
+  },
+  {
+   "topic": "topic-05",
+   "narrative": "Relevant records hold measurements or models of water depth or seabed elevation in seas, estuaries, harbours or lakes: bathymetric surveys, multibeam or single-beam echosounder data, hydrographic survey soundings, or gridded depth models. Records on seabed habitats, sediment type or geology without depth data do not count; nor do flood depth maps, river levels, tide gauges or land elevation models.",
+   "sub_questions": {
+    "L1": "bathymetry and seabed depth surveys",
+    "L2": "sea depth data",
+    "L3": "How deep is the sea floor around the British coast?",
+    "L4": "bathymetery and seabed depth surveys"
+   }
+  },
+  {
+   "topic": "topic-06",
+   "narrative": "Relevant records map or classify marine seabed habitats: biotope maps, benthic habitat classifications, seabed sediment or substrate maps made for habitat mapping, or surveys of the animals and plants living on the sea floor. Records that hold only water depth or bathymetry, marine protected area boundaries without habitat content, and terrestrial or freshwater habitat data do not count.",
+   "sub_questions": {
+    "L1": "seabed habitat and biotope maps",
+    "L2": "seabed habitats",
+    "L3": "What lives on the sea floor and where?",
+    "L4": "seabead habitat and biotope maps"
+   }
+  },
+  {
+   "topic": "topic-07",
+   "narrative": "Relevant records report on fish or shellfish populations or on fishing activity: research-vessel fish surveys, stock assessments, fish length or age data, commercial landings or catch statistics, and fishing effort. Freshwater fish surveys count. Records about marine habitats, water quality, aquaculture licences without catch or stock data, or seabirds and marine mammals do not count.",
+   "sub_questions": {
+    "L1": "fish stock surveys and fisheries catch data",
+    "L2": "fishing data",
+    "L3": "How many fish are being caught in UK waters?",
+    "L4": "fish stock survys and fisheries cach data"
+   }
+  },
+  {
+   "topic": "topic-08",
+   "narrative": "Relevant records map or measure woodland and forest: woodland extent, forest inventories, tree canopy cover, woodland types, ancient woodland, and felling or planting of forests. Data at any geographic level and from any publisher count. Records about individually protected trees, tree preservation orders, street trees, or forestry grant payments without woodland extent do not count.",
+   "sub_questions": {
+    "L1": "woodland extent and forest inventory",
+    "L2": "woodland map",
+    "L3": "How much of the country is covered by trees and forests?",
+    "L4": "woodand extent and forrest inventory"
+   }
+  },
+  {
+   "topic": "topic-09",
+   "narrative": "Relevant records describe offshore petroleum exploration and production on the UK continental shelf: wells, oil and gas fields, licences and licensed blocks, production volumes, pipelines and offshore installations. Records about onshore energy, offshore wind or other renewable energy, energy consumption, or company finance without these features do not count.",
+   "sub_questions": {
+    "L1": "offshore oil and gas wells, fields and licences",
+    "L2": "north sea oil",
+    "L3": "Where are the oil and gas fields under the North Sea?",
+    "L4": "offshore oil and gas wels, feilds and licences"
+   }
+  },
+  {
+   "topic": "topic-10",
+   "narrative": "Relevant records map or measure environmental noise exposure: strategic noise maps, road, rail, aircraft or industrial noise levels, noise important areas, or populations exposed to noise. Records about noise complaints or licensing without noise levels, and general air quality or traffic data, do not count.",
+   "sub_questions": {
+    "L1": "strategic noise maps for road, rail and airports",
+    "L2": "noise maps",
+    "L3": "How loud is the traffic noise near my home?",
+    "L4": "stratagic noise maps for road and rail"
+   }
+  },
+  {
+   "topic": "topic-11",
+   "narrative": "Relevant records report road traffic collisions or the people hurt in them: numbers of collisions, casualties, people killed or seriously injured, collision locations, or STATS19-style collision records, at any geographic level and from any publisher. Records about traffic volumes, road condition, speed cameras or parking without collision or casualty data do not count; nor do records about ambulance or emergency response times, or about accidents that do not involve road traffic.",
+   "sub_questions": {
+    "L1": "road traffic collisions and casualties",
+    "L2": "road accidents",
+    "L3": "Which roads have the most crashes where people get hurt?",
+    "L4": "road trafic colisions and casulaties"
+   }
+  },
+  {
+   "topic": "topic-12",
+   "narrative": "Relevant records report on the operation or use of the railway network: passenger journeys, station usage, train punctuality and reliability, cancellations, and rail performance or safety statistics. Records about rail infrastructure construction projects (such as route maps of a new line), trams or light rail only, road transport, or rail industry finance without usage or performance measures do not count.",
+   "sub_questions": {
+    "L1": "railway passenger usage and train performance statistics",
+    "L2": "rail punctuality",
+    "L3": "Are trains running on time, and how many people use them?",
+    "L4": "railway pasenger usage and train perfomance statistcs"
+   }
+  },
+  {
+   "topic": "topic-13",
+   "narrative": "Relevant records report parking enforcement: numbers of penalty charge notices or parking tickets issued, cancelled, paid or appealed, parking enforcement income, or locations and contraventions of parking tickets. Records that map car parks, parking bays or controlled parking zones without enforcement data, and records about parking permits or car park usage alone, do not count.",
+   "sub_questions": {
+    "L1": "parking penalty charge notices issued",
+    "L2": "parking fines",
+    "L3": "How many parking tickets does the council hand out, and where?",
+    "L4": "parking penallty charge notices isued"
+   }
+  },
+  {
+   "topic": "topic-14",
+   "narrative": "Relevant records are registers or returns of gifts, hospitality, travel or meetings received or given by ministers, senior civil servants, board members or council officers. Records of a body's general spending, expenditure over a threshold, procurement card transactions or staff salaries do not count, even when they come from the same transparency release.",
+   "sub_questions": {
+    "L1": "gifts and hospitality received by officials and ministers",
+    "L2": "gifts hospitality",
+    "L3": "What free gifts and dinners have senior officials accepted?",
+    "L4": "gifts and hospitallity received by officals"
+   }
+  },
+  {
+   "topic": "topic-15",
+   "narrative": "Relevant records list transactions made on government or council procurement cards (purchasing cards, GPC, corporate credit cards), usually with merchant, date and amount. Records of payments to suppliers over a value threshold, invoices, contracts, gifts and hospitality registers, and general budget statements do not count.",
+   "sub_questions": {
+    "L1": "government procurement card transactions",
+    "L2": "purchase card spending",
+    "L3": "What do public bodies buy with their corporate credit cards?",
+    "L4": "government procurment card transations"
+   }
+  },
+  {
+   "topic": "topic-16",
+   "narrative": "Relevant records hold data on non-domestic (business) rates: lists of rated properties or accounts, rateable values, reliefs and exemptions granted, credit balances, and business rates collection. Records about council tax for households, commercial property sales or rents, or business grants without rates data do not count.",
+   "sub_questions": {
+    "L1": "business rates accounts and reliefs",
+    "L2": "business rates",
+    "L3": "Which shops and offices pay business rates, and who gets relief?",
+    "L4": "busness rates acounts and reliefs"
+   }
+  },
+  {
+   "topic": "publisher-01",
+   "narrative": "Relevant records are datasets published by the Royal Armouries -- its collection, visitor, spending and corporate data, whatever the subject. Records about the Royal Armouries published by another body do not count, and neither do records from other bodies with similar names.",
+   "sub_questions": {
+    "L1": "datasets published by the Royal Armouries",
+    "L2": "royal armouries data",
+    "L3": "What does the national museum of arms and armour publish?",
+    "L4": "datasets published by the Royal Armories"
+   }
+  },
+  {
+   "topic": "publisher-02",
+   "narrative": "Relevant records are datasets published by Transport for Greater Manchester -- its public transport, highways, travel and corporate data, whatever the subject. Records about Transport for Greater Manchester published by another body do not count, and neither do records from other bodies with similar names. Records from Greater Manchester councils or from national transport bodies do not count, even when they cover Greater Manchester.",
+   "sub_questions": {
+    "L1": "datasets published by Transport for Greater Manchester",
+    "L2": "tfgm data",
+    "L3": "What open data does the transport authority for the Manchester city region release?",
+    "L4": "Transport for Greater Manchster datasets"
+   }
+  },
+  {
+   "topic": "publisher-03",
+   "narrative": "Relevant records are datasets published by Tunbridge Wells Borough Council -- its finance, procurement, planning, property and service data, whatever the subject. Records about Tunbridge Wells Borough Council published by another body do not count, and neither do records from other bodies with similar names. Records from Kent County Council or neighbouring district councils do not count.",
+   "sub_questions": {
+    "L1": "datasets published by Tunbridge Wells Borough Council",
+    "L2": "tunbridge wells council data",
+    "L3": "What does the borough council in west Kent around Southborough and Paddock Wood publish?",
+    "L4": "datasets published by Tunbridge Wels Borough Counsil"
+   }
+  },
+  {
+   "topic": "publisher-04",
+   "narrative": "Relevant records are datasets published by Ordnance Survey -- its mapping, boundary, place-name and corporate data, whatever the subject. Records about Ordnance Survey published by another body do not count, and neither do records from other bodies with similar names. Maps or boundary layers republished by councils or other agencies, even when derived from Ordnance Survey data, do not count.",
+   "sub_questions": {
+    "L1": "datasets published by Ordnance Survey",
+    "L2": "ordnance survey data",
+    "L3": "What data does Britain's national mapping agency release?",
+    "L4": "datasets published by Ordanance Survey"
+   }
+  },
+  {
+   "topic": "publisher-05",
+   "narrative": "Relevant records are datasets published by the Care Quality Commission -- its registration, inspection, rating and corporate data, whatever the subject. Records about the Care Quality Commission published by another body do not count, and neither do records from other bodies with similar names. Records from NHS bodies, councils or other regulators do not count, even when they concern care quality.",
+   "sub_questions": {
+    "L1": "datasets published by the Care Quality Commission",
+    "L2": "cqc data",
+    "L3": "What data does the regulator of hospitals and care homes in England publish?",
+    "L4": "datasets published by the Care Qualty Comission"
+   }
+  },
+  {
+   "topic": "publisher-06",
+   "narrative": "Relevant records are datasets published by Brecon Beacons National Park Authority -- its planning, boundary, access, conservation and corporate layers, whatever the subject. Records about Brecon Beacons National Park Authority published by another body do not count, and neither do records from other bodies with similar names. Records from other national park authorities, from Natural Resources Wales or from Welsh councils do not count, even when they cover the park.",
+   "sub_questions": {
+    "L1": "datasets published by Brecon Beacons National Park Authority",
+    "L2": "brecon beacons data",
+    "L3": "What does the authority that runs the national park in the mountains of south Wales publish?",
+    "L4": "datasets published by Brecon Beacon National Park Authoraty"
+   }
+  },
+  {
+   "topic": "publisher-07",
+   "narrative": "Relevant records are datasets published by NHS Nottingham West CCG -- its expenditure, contract and corporate data, whatever the subject. Records about NHS Nottingham West CCG published by another body do not count, and neither do records from other bodies with similar names. In particular, records from NHS Nottingham City CCG, NHS Nottingham North & East CCG, NHS Rushcliffe CCG or any other clinical commissioning group do not count, even when they carry the same kind of data for the same month.",
+   "sub_questions": {
+    "L1": "datasets published by NHS Nottingham West CCG",
+    "L2": "nottingham west ccg",
+    "L3": "What spending data did the clinical commissioning group for the west of Nottinghamshire publish?",
+    "L4": "NHS Notingham West CCG datasets"
+   }
+  },
+  {
+   "topic": "spatial-01",
+   "narrative": "Relevant records are datasets published by Rochford District Council that carry spatial content -- mapped locations, boundaries or geographic layers covering the district. Any of that council's mapped asset, boundary, planning, environmental or facility layers count, whatever the subject. Records published by other councils, by Essex County Council, or by national agencies do not count, even when their coverage includes the district. Rochford District Council records with no mapped or spatial component do not count either.",
+   "sub_questions": {
+    "L1": "spatial datasets published by Rochford District Council",
+    "L2": "rochford council maps",
+    "L3": "What is mapped for the Essex district around Rayleigh and Hockley?",
+    "L4": "Rochfrod District Council spatial datasets"
+   }
+  },
+  {
+   "topic": "spatial-02",
+   "narrative": "Relevant records are datasets published by the London Borough of Havering that carry spatial content -- mapped locations, boundaries or geographic layers for the borough. Any of that council's mapped asset, boundary, planning, environmental or facility layers count, whatever the subject. Records published by other London boroughs, by the Greater London Authority, or by national agencies do not count, even when their coverage includes Havering. Havering records with no mapped or spatial component do not count either.",
+   "sub_questions": {
+    "L1": "spatial datasets published by the London Borough of Havering",
+    "L2": "havering council maps",
+    "L3": "What mapped layers does the east London borough around Romford publish?",
+    "L4": "伦敦 Havering 区议会 空间数据"
+   }
+  },
+  {
+   "topic": "region-01",
+   "narrative": "Relevant records map or list sites designated for nature conservation in Wales or in Welsh waters -- Sites of Special Scientific Interest, Special Areas of Conservation, Special Protection Areas, Ramsar sites, National Nature Reserves, Local Nature Reserves and marine protected areas. Designations elsewhere in the UK do not count. Datasets covering Great Britain or the UK as a whole count only if Wales is named as a subject of the record. Landscape designations such as national parks and Areas of Outstanding Natural Beauty do not count.",
+   "sub_questions": {
+    "L1": "protected sites and nature conservation designations in Wales",
+    "L2": "wales protected sites",
+    "L3": "Which areas of the Welsh countryside and coast are legally protected for wildlife?",
+    "L4": "protected sites and nature conservaton designations in Wales"
+   }
+  },
+  {
+   "topic": "region-02",
+   "narrative": "Relevant records report the size or structure of the population of Northern Ireland or of areas within it: population estimates and projections, age and sex structure, households, and the births, deaths and migration that make up population change. Census tables on population characteristics count. Labour market or employment statistics, health service data, and records for other parts of the UK do not count; UK-wide tables count only if Northern Ireland is named as a subject of the record.",
+   "sub_questions": {
+    "L1": "population estimates and demographic statistics for Northern Ireland",
+    "L2": "ni population",
+    "L3": "How many people live in each part of Northern Ireland, and how is that changing?",
+    "L4": "populaton estimates for Nothern Ireland"
+   }
+  },
+  {
+   "topic": "region-03",
+   "narrative": "Relevant records report on health services in Scotland: hospital admissions and activity, waiting times, prescribing, the NHS Scotland workforce, and service performance, at national, health board or hospital level. Health service data for England, Wales or Northern Ireland do not count; UK-wide tables count only if Scotland is named as a subject of the record. Records on population, births or deaths without health-service content do not count.",
+   "sub_questions": {
+    "L1": "hospital activity and health service statistics for Scotland",
+    "L2": "scottish nhs data",
+    "L3": "How long do patients wait for treatment in Scottish hospitals?",
+    "L4": "hosptial activity and helth statistics for Scotland"
+   }
+  },
+  {
+   "topic": "graph-01",
+   "narrative": "Relevant records are other datasets belonging to the same family of material as the Cheshire West and Chester layer 'Rights Of Way - Byways Open To All Traffic': mapped layers of public rights of way and legally defined public access routes -- footpaths, bridleways, restricted byways, byways open to all traffic, definitive maps and statements, national trails and open access land -- from any publisher. The byways layer itself does not count, because the need asks what else relates to it. Sharing a publisher is not on its own sufficient: a Cheshire West and Chester dataset on heritage, schools, planning or spending does not count. Road networks, cycle routes on the highway, and walking or tourism guides without legally defined access routes do not count.",
+   "sub_questions": {
+    "L1": "datasets related to Rights Of Way - Byways Open To All Traffic",
+    "L2": "byways open to all traffic related",
+    "L3": "What other public access route layers exist alongside the byway map for west Cheshire?",
+    "L4": "Rights Of Way - Byways Open To All Trafic related datasets"
+   }
+  },
+  {
+   "topic": "graph-02",
+   "narrative": "Relevant records are other datasets belonging to the same family of material as the North York Moors National Park Authority layer 'NYMNPA Owned and Managed Car Parks': mapped layers of visitor facilities and access infrastructure owned, managed or designated by a national park authority -- car parks, toilets, visitor centres, national trails and promoted routes, access land and other recreational access layers -- from any national park authority in the UK. The car parks layer itself does not count. Sharing a publisher is not on its own sufficient: a national park dataset on planning policy, habitats, heritage or spending does not count. Car parks and visitor facilities published by councils or other bodies do not count.",
+   "sub_questions": {
+    "L1": "datasets related to NYMNPA Owned and Managed Car Parks",
+    "L2": "nymnpa car parks related",
+    "L3": "What other visitor access layers do national park authorities publish alongside their car park maps?",
+    "L4": "NYMNPA Owned and Managed Car Parcs related datasets"
+   }
+  },
+  {
+   "topic": "topic-17",
+   "narrative": "Relevant records report statistics on students in higher education -- applications, entrants, enrolments, qualifications obtained and destinations of graduates at universities and colleges, by institution, subject or student characteristics. Student loans and student finance do not count, and neither do university finances, staff, research funding or estates without student numbers. School pupils and further education learners outside higher education do not count.",
+   "sub_questions": {
+    "L1": "higher education student enrolment and qualification statistics",
+    "L2": "university student numbers",
+    "L3": "How many people started degree courses in each subject last year?",
+    "L4": "higer education studnet statistics"
+   }
+  },
+  {
+   "topic": "topic-18",
+   "narrative": "Relevant records report student finance for higher education students -- student loans for tuition fees and maintenance, grants, applications for student support, repayments and outstanding loan balances. Corporate spending, supplier payments and staffing data of the Student Loans Company do not count. Statistics on student numbers or qualifications without finance data do not count, and neither do bursaries for learners aged 16 to 19.",
+   "sub_questions": {
+    "L1": "student loans and student finance statistics",
+    "L2": "student loan data",
+    "L3": "How much do graduates still owe for their tuition and living costs?",
+    "L4": "studnet loan finance statistcs"
+   }
+  },
+  {
+   "topic": "topic-19",
+   "narrative": "Relevant records report statistics on cancer -- cancer registrations and incidence, survival and mortality, screening programme coverage and outcomes, or waiting times for cancer diagnosis and treatment. Records about other diseases, general hospital activity or general mortality do not count unless cancer is a named subject of the record. Health service spending and staffing data do not count either.",
+   "sub_questions": {
+    "L1": "cancer incidence, survival, screening and waiting time statistics",
+    "L2": "cancer statistics",
+    "L3": "How many women are invited for breast screening, and how quickly are they treated?",
+    "L4": "cancr survival statstics"
+   }
+  },
+  {
+   "topic": "topic-20",
+   "narrative": "Relevant records concern prisons, probation and the management of offenders in custody or in the community -- prison population and incidents, deaths in custody, complaints to the prisons and probation ombudsman, and offender management workforce or caseload data. Court statistics, sentencing and policing data count only if they describe prisons or probation, and crime statistics do not count.",
+   "sub_questions": {
+    "L1": "prison and probation complaints, incidents and offender management data",
+    "L2": "prison data",
+    "L3": "How many complaints from inmates were upheld by the independent investigator last year?",
+    "L4": "prision and probaton data"
+   }
+  },
+  {
+   "topic": "topic-21",
+   "narrative": "Relevant records report children's social care -- children looked after by local authorities, child protection plans and registers, children in need, adoption and placement timeliness, and the outcomes of looked-after children. School attainment, childcare provision and child health data do not count unless they are reported for children in care or children in need.",
+   "sub_questions": {
+    "L1": "children looked after, child protection and adoption statistics",
+    "L2": "children in care",
+    "L3": "How many children were taken into care, and how long did it take to place them with adoptive families?",
+    "L4": "childern looked after statistcs"
+   }
+  },
+  {
+   "topic": "topic-22",
+   "narrative": "Relevant records report emissions of greenhouse gases or carbon dioxide -- national, sectoral or local emissions inventories and projections, carbon reduction schemes, and organisations' own carbon emissions. Air pollutants such as nitrogen dioxide or particulates, vehicle emission compliance testing, and fuel duty statistics without emissions data do not count. Energy consumption figures count only if they are reported as emissions.",
+   "sub_questions": {
+    "L1": "greenhouse gas and carbon dioxide emissions data",
+    "L2": "carbon emissions",
+    "L3": "How much do land use and forestry offset the country's climate-warming gases?",
+    "L4": "greenhous gas emmissions data"
+   }
+  },
+  {
+   "topic": "topic-23",
+   "narrative": "Relevant records are landscape character assessments and their mapped outputs -- landscape character types and areas, landscape sensitivity or capacity studies, and seascape character assessments, at national, county or district level. Landscape designations such as Areas of Outstanding Natural Beauty or national park boundaries, green belt, and habitat or land cover maps without a landscape character classification do not count.",
+   "sub_questions": {
+    "L1": "landscape character assessment areas and types",
+    "L2": "landscape character",
+    "L3": "How is the countryside around our district divided into areas with a distinct look and feel?",
+    "L4": "landscape charachter assesment"
+   }
+  },
+  {
+   "topic": "topic-24",
+   "narrative": "Relevant records concern airports and air passengers -- passenger surveys at airports, passenger numbers, airport slot allocation, and airport safeguarding or public safety zones. Rail and bus passenger surveys do not count, and neither do general aviation regulation, airline accounts or noise maps unless an airport is a named subject of the record.",
+   "sub_questions": {
+    "L1": "airport passenger surveys and airport data",
+    "L2": "airport passengers",
+    "L3": "Where do travellers flying out of Manchester and Stansted come from?",
+    "L4": "airprot pasenger survey"
+   }
+  },
+  {
+   "topic": "topic-25",
+   "narrative": "Relevant records are registers or lists of premises licences and alcohol licensing under the Licensing Act -- licensed premises, club premises certificates, late-night refreshment and personal licences, with or without licence conditions. Taxi and private hire, gambling, animal and street trading licences do not count, and neither do licensing policy documents without lists of licences.",
+   "sub_questions": {
+    "L1": "premises licence and alcohol licensing registers",
+    "L2": "licensed premises",
+    "L3": "Which pubs and shops near me are allowed to sell alcohol late at night?",
+    "L4": "premisis licence registers"
+   }
+  },
+  {
+   "topic": "topic-26",
+   "narrative": "Relevant records are registers of land, buildings and other property owned or managed by a council or public body -- asset registers, land and property terriers, and lists of council-owned sites. Registers of infrastructure such as flood defence, highway or drainage assets do not count. HM Land Registry title and price paid data, brownfield land registers, and surplus land disposal policies without an asset list do not count.",
+   "sub_questions": {
+    "L1": "council land and property asset registers",
+    "L2": "council asset register",
+    "L3": "Which buildings and plots of land does my local authority own?",
+    "L4": "council land and proprety asset register"
+   }
+  },
+  {
+   "topic": "publisher-08",
+   "narrative": "Relevant records are datasets published by NHS Nottingham North & East CCG -- its expenditure, contract and corporate data, whatever their subject. Records from other bodies with similar names do not count. In particular, records from NHS Nottingham West CCG, NHS Nottingham City CCG, NHS Rushcliffe CCG or any other clinical commissioning group do not count, even when they carry the same kind of data for the same month.",
+   "sub_questions": {
+    "L1": "datasets published by NHS Nottingham North & East CCG",
+    "L2": "nottingham north east ccg",
+    "L3": "What spending did the health commissioning group for Arnold, Carlton and Hucknall publish?",
+    "L4": "NHS Notingham North and East CCG datasets"
+   }
+  },
+  {
+   "topic": "publisher-09",
+   "narrative": "Relevant records are datasets published by HM Land Registry, whatever their subject -- price paid data, title and ownership data, house price indices and corporate data. Records from other bodies do not count, including Registers of Scotland, Land & Property Services in Northern Ireland, the Valuation Office Agency and councils' land and property registers.",
+   "sub_questions": {
+    "L1": "datasets published by HM Land Registry",
+    "L2": "land registry data",
+    "L3": "What did houses on my street sell for, according to the official register of property in England and Wales?",
+    "L4": "HM Land Registery datasets"
+   }
+  },
+  {
+   "topic": "publisher-10",
+   "narrative": "Relevant records are datasets published by High Speed 2 Limited, whatever their subject -- route and engineering design data, environmental surveys, hybrid bill documents and corporate data. Records from other bodies do not count, including the Department for Transport, Network Rail, the Office of Rail and Road and local councils, even when they concern the HS2 route.",
+   "sub_questions": {
+    "L1": "datasets published by High Speed 2 Limited",
+    "L2": "hs2 data",
+    "L3": "What has the company building the new high-speed line from London to Birmingham released?",
+    "L4": "High Sped 2 Limted datasets"
+   }
+  },
+  {
+   "topic": "publisher-11",
+   "narrative": "Relevant records are datasets published by Ofcom, whatever their subject -- broadband and mobile coverage, media use surveys, broadcast licensing, spectrum and corporate data. Records from other bodies do not count, including the Department for Culture, Media and Sport, the BBC, and telecoms or broadcasting companies, even on the same subject.",
+   "sub_questions": {
+    "L1": "datasets published by Ofcom",
+    "L2": "ofcom data",
+    "L3": "What does the communications regulator report about how adults use the internet and television?",
+    "L4": "Offcom datasets"
+   }
+  },
+  {
+   "topic": "publisher-12",
+   "narrative": "Relevant records are datasets published by the Mining Remediation Authority, formerly the Coal Authority, whatever their subject -- coal mining reporting areas, mine shafts and entries, mine water and borehole data, and licensing. Records from other bodies do not count, including the British Geological Survey, the Environment Agency and the Health and Safety Executive, even on the same mining subject.",
+   "sub_questions": {
+    "L1": "datasets published by the Mining Remediation Authority",
+    "L2": "coal authority data",
+    "L3": "Is there an old coal mine shaft under the house I want to buy?",
+    "L4": "Minning Remediaton Authority datasets"
+   }
+  },
+  {
+   "topic": "spatial-03",
+   "narrative": "Relevant records are geographic datasets -- map layers, boundaries or other spatial data -- whose coverage is the Medway unitary authority in Kent or a place within it, such as Chatham, Gillingham, Rochester or Strood. Records from any publisher count, including Medway Council's own planning, heritage, education and asset layers. Datasets for Kent or for England as a whole count only if Medway is named as a subject of the record. Medway records with no mapped or spatial component do not count.",
+   "sub_questions": {
+    "L1": "Medway spatial datasets",
+    "L2": "medway council maps",
+    "L3": "What mapped layers exist for the towns around Chatham and Rochester on the Thames estuary?",
+    "L4": "英国 Medway 议会 空间数据"
+   }
+  },
+  {
+   "topic": "spatial-04",
+   "narrative": "Relevant records are geographic datasets -- map layers, boundaries or other spatial data -- whose coverage is the borough of Dacorum in Hertfordshire or a place within it, such as Hemel Hempstead, Berkhamsted or Tring. Records from any publisher count, including Dacorum Borough Council's own layers. Datasets for Hertfordshire or for England as a whole count only if Dacorum is named as a subject of the record. Dacorum records with no mapped or spatial component do not count.",
+   "sub_questions": {
+    "L1": "Dacorum spatial datasets",
+    "L2": "dacorum council maps",
+    "L3": "What maps are available for Hemel Hempstead and the nearby Hertfordshire towns?",
+    "L4": "Dacorm spatial datsets"
+   }
+  },
+  {
+   "topic": "region-04",
+   "narrative": "Relevant records concern the Isle of Wight, whatever their subject -- council services, planning and land, health services, environment and transport on the island. Records about the wider Solent, Hampshire or the South East count only if the Isle of Wight is named as a subject of the record, and national datasets likewise count only if the island is named. Records about other islands do not count.",
+   "sub_questions": {
+    "L1": "datasets about the Isle of Wight",
+    "L2": "isle of wight data",
+    "L3": "What public information is there on the island across the Solent from Southampton?",
+    "L4": "Isle of Wigth datasets"
+   }
+  },
+  {
+   "topic": "region-05",
+   "narrative": "Relevant records concern Cornwall or the Isles of Scilly, whatever their subject -- council services, planning, fisheries and marine conservation, health services and the environment. Records about Devon or South West England as a whole count only if Cornwall or the Isles of Scilly is named as a subject of the record, and national datasets likewise count only if it is named. Records about other parts of England do not count.",
+   "sub_questions": {
+    "L1": "datasets about Cornwall and the Isles of Scilly",
+    "L2": "cornwall data",
+    "L3": "What is published about the far south-western tip of England and its offshore islands?",
+    "L4": "Cornwal and Isles of Scily datasets"
+   }
+  },
+  {
+   "topic": "graph-03",
+   "narrative": "Relevant records are other datasets belonging to the same family of material as the North Somerset Council record 'Council procurement card transactions': the council's transparency publications on its own spending, pay and workforce -- payments and card transactions, senior salaries, trade union facility time and representatives, and similar open-government returns. The anchor record itself does not count, because the need asks what else relates to it. Sharing a publisher is not on its own sufficient: North Somerset datasets on car parks, care homes, planning or waste do not count, and neither do other councils' transparency returns.",
+   "sub_questions": {
+    "L1": "datasets related to Council procurement card transactions",
+    "L2": "council procurement card transactions related",
+    "L3": "What else does the council for Weston-super-Mare publish about its spending and staff pay?",
+    "L4": "Council procurment card transactions related datasets"
+   }
+  }
+ ]
+}

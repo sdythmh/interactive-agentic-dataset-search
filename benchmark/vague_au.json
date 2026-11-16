@@ -1,0 +1,89 @@
+{
+ "corpus": "au",
+ "questions": [
+  {
+   "id": "vague-topic-03",
+   "question": "flood studies",
+   "topic": "topic-03",
+   "withheld": "along the Murray River near Albury",
+   "withheld_dim": "place"
+  },
+  {
+   "id": "vague-topic-04",
+   "question": "wastewater datasets",
+   "topic": "topic-04",
+   "withheld": "Eastern Treatment Plant",
+   "withheld_dim": "facility"
+  },
+  {
+   "id": "vague-spatial-01",
+   "question": "spatial datasets",
+   "topic": "spatial-01",
+   "withheld": "published by Mitchell Shire Council",
+   "withheld_dim": "org"
+  },
+  {
+   "id": "vague-spatial-02",
+   "question": "wastewater infrastructure datasets",
+   "topic": "spatial-02",
+   "withheld": "covering Victoria",
+   "withheld_dim": "place"
+  },
+  {
+   "id": "vague-spatial-03",
+   "question": "spatial datasets",
+   "topic": "spatial-03",
+   "withheld": "published by Maribyrnong City Council",
+   "withheld_dim": "org"
+  },
+  {
+   "id": "vague-graph-02",
+   "question": "datasets related to Traffic Signals",
+   "topic": "graph-02",
+   "withheld": "Manningham",
+   "withheld_dim": "place"
+  },
+  {
+   "id": "vague-topic-16",
+   "question": "geological maps and stratigraphy",
+   "topic": "topic-16",
+   "withheld": "of Victoria",
+   "withheld_dim": "place"
+  },
+  {
+   "id": "vague-publisher-05",
+   "question": "datasets for the Gippsland region",
+   "topic": "publisher-05",
+   "withheld": "Bioregional Assessment Program",
+   "withheld_dim": "org"
+  },
+  {
+   "id": "vague-publisher-06",
+   "question": "anticipatory notices and declarations lodged",
+   "topic": "publisher-06",
+   "withheld": "by Myport Pty Ltd",
+   "withheld_dim": "org"
+  },
+  {
+   "id": "vague-publisher-07",
+   "question": "datasets published by the council",
+   "topic": "publisher-07",
+   "withheld": "City of Sydney",
+   "withheld_dim": "org"
+  },
+  {
+   "id": "vague-region-01",
+   "question": "environmental studies and monitoring data",
+   "topic": "region-01",
+   "withheld": "for Port Phillip Bay",
+   "withheld_dim": "place"
+  },
+  {
+   "id": "vague-region-02",
+   "question": "flood studies and floodplain management data",
+   "topic": "region-02",
+   "withheld": "for the Lachlan River catchment",
+   "withheld_dim": "place"
+  }
+ ]
+}

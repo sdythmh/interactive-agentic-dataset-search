@@ -1,0 +1,87 @@
+{
+  "au": {
+    "examples": [
+      {
+        "text": "road transportation network datasets",
+        "kind": "topic"
+      },
+      {
+        "text": "water quality monitoring data for rivers, estuaries and bays",
+        "kind": "topic"
+      },
+      {
+        "text": "datasets published by Melbourne Water",
+        "kind": "publisher"
+      },
+      {
+        "text": "wastewater infrastructure datasets covering Victoria",
+        "kind": "place"
+      },
+      {
+        "text": "datasets related to Barwon Water Water Assets",
+        "kind": "related"
+      }
+    ],
+    "clarify": {
+      "text": "statistics",
+      "suggested_reply": "crime in Victoria"
+    }
+  },
+  "uk": {
+    "examples": [
+      {
+        "text": "road traffic collisions and casualties",
+        "kind": "topic"
+      },
+      {
+        "text": "bathymetry and seabed depth surveys",
+        "kind": "topic"
+      },
+      {
+        "text": "datasets published by Transport for Greater Manchester",
+        "kind": "publisher"
+      },
+      {
+        "text": "protected sites and nature conservation designations in Wales",
+        "kind": "place"
+      },
+      {
+        "text": "datasets related to NYMNPA Owned and Managed Car Parks",
+        "kind": "related"
+      }
+    ],
+    "clarify": {
+      "text": "population estimates and demographic statistics",
+      "suggested_reply": "for Northern Ireland"
+    }
+  },
+  "us": {
+    "examples": [
+      {
+        "text": "air quality monitoring data",
+        "kind": "topic"
+      },
+      {
+        "text": "311 service requests",
+        "kind": "topic"
+      },
+      {
+        "text": "Consumer Financial Protection Bureau data",
+        "kind": "publisher"
+      },
+      {
+        "text": "Colorado geospatial data",
+        "kind": "place"
+      },
+      {
+        "text": "Connecticut population estimates by town",
+        "kind": "place"
+      },
+      {
+        "text": "surficial geologic map",
+        "kind": "topic"
+      }
+    ],
+    "clarify": null
+  }
+}

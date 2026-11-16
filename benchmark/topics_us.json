@@ -1,0 +1,506 @@
+{
+ "corpus": "us",
+ "portal": "catalog.data.gov",
+ "topics": [
+  {
+   "topic": "topic-01",
+   "narrative": "Relevant records are statistical tables of private-sector workforce composition from employer EEO-1 reports, aggregated for one or more U.S. states, showing employment by sex and by race or ethnic group across job categories. Tables at other geographic levels count only if state-level figures are included; national totals alone do not count. Tables aggregated only by metropolitan area, county or industry, charge or complaint statistics on discrimination, reports on the federal workforce, and general labor-force data that do not come from employer EEO-1 reports do not count.",
+   "sub_questions": {
+    "L1": "EEO-1 job patterns for minorities and women in private industry by state",
+    "L2": "workforce diversity state",
+    "L3": "How do the shares of women and minority workers at private employers differ from one state to another?",
+    "L4": "EEO-1 job paterns for minoritys and women in privat industry by state"
+   }
+  },
+  {
+   "topic": "topic-02",
+   "narrative": "Relevant records report beneficiaries of the Railroad Retirement Act: numbers of retired railroad workers, spouses, survivors or other annuitants, and the benefits paid to them, by state, county, type of benefit or year. Railroad unemployment or sickness benefits count only if retirement or survivor beneficiaries are also reported. Records on railroad employment, railroad employers or the pay of active workers without beneficiary figures do not count, nor do Social Security or other retirement programs that are not railroad programs.",
+   "sub_questions": {
+    "L1": "Railroad Retirement Act beneficiaries and benefits paid",
+    "L2": "railroad pensions",
+    "L3": "How many retired rail workers and their survivors receive benefits in each state?",
+    "L4": "Railroad Retirment Act beneficiries and benifits paid"
+   }
+  },
+  {
+   "topic": "topic-03",
+   "narrative": "Relevant records are data from the survey of state library administrative agencies -- the agencies in each state government that support library services across the state -- covering their staffing, finances, services, collections or programs, for any survey year. Data files, documentation and supplementary tables of that survey count. The survey of individual public library systems, surveys of academic or school libraries, and museum statistics do not count.",
+   "sub_questions": {
+    "L1": "State Library Administrative Agencies Survey",
+    "L2": "state library agencies",
+    "L3": "How much do state governments spend on supporting libraries, and how many staff do their library agencies employ?",
+    "L4": "State Libary Administrative Agences Survey"
+   }
+  },
+  {
+   "topic": "topic-04",
+   "narrative": "Relevant records are data from the Current Population Survey, the monthly household survey of the U.S. labor force: basic monthly files, annual supplements, or tables derived from it on employment, unemployment, earnings, income, school enrollment or other population characteristics. Documentation and microdata files of the survey count. Data from other surveys, such as the American Community Survey, the decennial census or establishment payroll surveys, do not count, even when they cover the same topics.",
+   "sub_questions": {
+    "L1": "Current Population Survey labor force data",
+    "L2": "monthly jobs survey",
+    "L3": "Where can I get the household survey microdata used to calculate the national unemployment rate each month?",
+    "L4": "Curent Populaton Survey labor forse data"
+   }
+  },
+  {
+   "topic": "topic-05",
+   "narrative": "Relevant records report consumer complaints about fraud, identity theft or other unfair business practices collected through the Consumer Sentinel Network, at national, state or metropolitan level, by category, contact or payment method, or reported losses. Complaint databases kept separately by other agencies, product safety recalls, and do-not-call registry statistics do not count.",
+   "sub_questions": {
+    "L1": "Consumer Sentinel Network fraud and identity theft reports",
+    "L2": "fraud complaints",
+    "L3": "In which states do people report losing the most money to scams?",
+    "L4": "Consumer Sentinal Network fraud and identy theft reports"
+   }
+  },
+  {
+   "topic": "topic-06",
+   "narrative": "Relevant records are strategic plans of government agencies: documents or data that set out an agency's multi-year strategic goals and objectives, including updates, drafts and the performance goals defined in a strategic plan. Plans from any agency or level of government count, including agency-wide plans for one function such as information technology or human capital. Annual performance or progress reports that only report results, budget justifications, and plans for a single project, facility or information system do not count.",
+   "sub_questions": {
+    "L1": "agency strategic plan",
+    "L2": "strategic plans",
+    "L3": "What long-term goals has each federal department committed to over the next few years?",
+    "L4": "agency stratigic plan"
+   }
+  },
+  {
+   "topic": "topic-07",
+   "narrative": "Relevant records are geographic files that give street address ranges along road or other edge features -- for example address range feature files, address range relationship files and address range feature name files -- for any county or state. Files that hold only road centerlines, feature names without address ranges, or lists of individual address points do not count, nor do ZIP code boundary files.",
+   "sub_questions": {
+    "L1": "TIGER/Line address range-feature shapefile",
+    "L2": "street address ranges",
+    "L3": "I need the house number ranges on each side of every street segment in a county to geocode addresses.",
+    "L4": "TIGER/Line adress range-feture shapefile"
+   }
+  },
+  {
+   "topic": "topic-08",
+   "narrative": "Relevant records report measured or modeled outdoor air quality: concentrations of pollutants such as ozone, particulate matter, nitrogen dioxide or sulfur dioxide, air quality index values, or the locations of air monitoring stations. Emissions inventories count only if they include measured or modeled air quality. Indoor air, greenhouse gas totals without air quality measures, weather data, and permits for polluting facilities without measurements do not count.",
+   "sub_questions": {
+    "L1": "air quality monitoring data",
+    "L2": "air pollution",
+    "L3": "How polluted is the air near where I live, and has it been getting better?",
+    "L4": "air qualty monitering data"
+   }
+  },
+  {
+   "topic": "topic-09",
+   "narrative": "Relevant records list or summarize parking citations, parking tickets or parking violations issued, with details such as location, violation type, date, fine amount or payment status. Records from any city or county count. Moving traffic violations, traffic crash records, parking meter or garage locations without citations, and parking permits do not count.",
+   "sub_questions": {
+    "L1": "parking violations issued",
+    "L2": "parking tickets",
+    "L3": "Which streets in town get the most fines for illegally parked cars?",
+    "L4": "parking violatons issued"
+   }
+  },
+  {
+   "topic": "topic-10",
+   "narrative": "Relevant records report election results by precinct or voting district -- votes cast for candidates or ballot measures, turnout, or registered voters per precinct -- for any election. Results reported only at county, state or district level count only if precinct-level figures are included. Precinct or polling place boundary and location files without vote counts, campaign finance records, and candidate lists do not count.",
+   "sub_questions": {
+    "L1": "election results by precinct",
+    "L2": "precinct results",
+    "L3": "How did each neighborhood vote in the last local election?",
+    "L4": "elction results by precint"
+   }
+  },
+  {
+   "topic": "topic-11",
+   "narrative": "Relevant records list or summarize calls for police service: 911 or non-emergency calls dispatched to police, with call type, time, location, priority or response time. Records from any police department count. Crime or incident reports that are not call records, arrests, use-of-force data, traffic stops, and fire or medical emergency calls handled only by other services do not count.",
+   "sub_questions": {
+    "L1": "police calls for service",
+    "L2": "911 calls",
+    "L3": "How quickly do officers respond when residents phone for help, and what are people calling about?",
+    "L4": "police calls for servise"
+   }
+  },
+  {
+   "topic": "topic-12",
+   "narrative": "Relevant records list or summarize service requests submitted by residents to a city or county -- for example 311 requests about potholes, missed trash collection, graffiti, streetlights or code complaints -- with request type, date, location or status. Requests to any local government count. Building or development permit applications, police calls for service, and resident satisfaction surveys without request records do not count.",
+   "sub_questions": {
+    "L1": "311 service requests",
+    "L2": "city service requests",
+    "L3": "How long does the city take to fix a pothole after someone reports it?",
+    "L4": "311 servce requsts"
+   }
+  },
+  {
+   "topic": "topic-13",
+   "narrative": "Relevant records report property taxes: tax rates or levies, assessed or taxable values, property tax bills, collections, delinquencies, exemptions or abatements, for any jurisdiction. Real property assessment rolls count only if they include tax amounts or taxable values. Sales, income or other taxes, property sales without tax data, and parcel boundaries without assessment or tax information do not count.",
+   "sub_questions": {
+    "L1": "property tax rates and assessments",
+    "L2": "property taxes",
+    "L3": "How much do homeowners in different towns pay each year on their houses?",
+    "L4": "propety tax rates and assesments"
+   }
+  },
+  {
+   "topic": "topic-14",
+   "narrative": "Relevant records are maps or spatial data of surficial geology -- the loose materials at or near the land surface, such as glacial deposits, till, alluvium, or sand and gravel -- for any area and at any scale. Maps of bedrock geology only, soil survey data, topographic or elevation data, and well or mineral resource records without a surficial geology map do not count.",
+   "sub_questions": {
+    "L1": "surficial geologic map",
+    "L2": "surficial geology",
+    "L3": "What kind of loose sediment, like glacial sand or gravel, lies under the ground in this area?",
+    "L4": "surficial geolgic map"
+   }
+  },
+  {
+   "topic": "topic-15",
+   "narrative": "Relevant records are maps or models of the geographic range or predicted habitat of individual wildlife species -- range maps, habitat suitability or predicted habitat for amphibians, reptiles, birds, mammals or fish. Records from any publisher count. Observation or survey point records without a modeled range, vegetation or land cover maps not tied to a species, and protected area boundaries do not count.",
+   "sub_questions": {
+    "L1": "predicted habitat and range maps for wildlife species",
+    "L2": "species range maps",
+    "L3": "Where in the state could a particular bird or lizard be expected to live?",
+    "L4": "predicted habbitat and range maps for widlife species"
+   }
+  },
+  {
+   "topic": "topic-16",
+   "narrative": "Relevant records report unemployment insurance under state programs: initial or continued claims, claimants, benefit payments, trust fund balances or employer contributions, for any state, county or period. Unemployment rates or labor force estimates without insurance data do not count, nor do railroad unemployment benefits, workers' compensation for injuries, or job training programs.",
+   "sub_questions": {
+    "L1": "unemployment insurance claims and benefits",
+    "L2": "jobless claims",
+    "L3": "How many people have applied for benefits after losing their jobs this year?",
+    "L4": "unemployement insurance claims and benifits"
+   }
+  },
+  {
+   "topic": "publisher-01",
+   "narrative": "Relevant records are datasets published by the Commodity Futures Trading Commission, the U.S. federal regulator of futures, options and swaps markets, whatever their subject. Records about commodity or derivatives markets from other publishers -- such as the Securities and Exchange Commission, the Federal Reserve or a futures exchange -- do not count.",
+   "sub_questions": {
+    "L1": "Commodity Futures Trading Commission datasets",
+    "L2": "cftc data",
+    "L3": "What data does the federal regulator of futures and swaps trading publish?",
+    "L4": "Comodity Futures Trading Comission datasets"
+   }
+  },
+  {
+   "topic": "publisher-02",
+   "narrative": "Relevant records are datasets published by the Consumer Financial Protection Bureau, whatever their subject. Records on consumer finance, mortgages or complaints from other publishers -- such as the Federal Trade Commission, the Federal Reserve, the FDIC or state agencies -- do not count, nor do records from the Consumer Product Safety Commission.",
+   "sub_questions": {
+    "L1": "Consumer Financial Protection Bureau data",
+    "L2": "cfpb data",
+    "L3": "What data has the federal agency that handles complaints about banks and credit cards released?",
+    "L4": "Consumer Finacial Protection Buro data"
+   }
+  },
+  {
+   "topic": "publisher-03",
+   "narrative": "Relevant records are datasets published by the U.S. Election Assistance Commission, whatever their subject. Records from the Federal Election Commission, which regulates campaign finance, do not count, nor do election results or voter data published by states, counties or cities.",
+   "sub_questions": {
+    "L1": "Election Assistance Commission datasets",
+    "L2": "eac data",
+    "L3": "What has the federal agency that helps states run elections and certifies voting machines published?",
+    "L4": "Election Asistance Comission datasets"
+   }
+  },
+  {
+   "topic": "publisher-04",
+   "narrative": "Relevant records are datasets published by the City of Chesapeake, Virginia, whatever their subject. Records about the Chesapeake Bay or the Chesapeake region published by other bodies do not count, nor do records from neighboring Virginia localities or from the Commonwealth of Virginia.",
+   "sub_questions": {
+    "L1": "City of Chesapeake open data",
+    "L2": "chesapeake city",
+    "L3": "What information does the city government of Chesapeake in Virginia make available?",
+    "L4": "City of Chesapeak open data"
+   }
+  },
+  {
+   "topic": "publisher-05",
+   "narrative": "Relevant records are datasets published by the Town of Chapel Hill, North Carolina, whatever their subject. Records from the Town of Cary, from other North Carolina towns, cities or counties, or from the University of North Carolina do not count.",
+   "sub_questions": {
+    "L1": "Town of Chapel Hill datasets",
+    "L2": "chapel hill data",
+    "L3": "What has the town government in Chapel Hill put online as open data?",
+    "L4": "Town of Chaple Hill datasets"
+   }
+  },
+  {
+   "topic": "publisher-06",
+   "narrative": "Relevant records are datasets published by the government of the State of Hawaii, whatever their subject. Records from the City and County of Honolulu, from other counties in Hawaii, or from federal agencies about Hawaii do not count.",
+   "sub_questions": {
+    "L1": "State of Hawaii open data",
+    "L2": "hawaii state data",
+    "L3": "What has Hawaii's state government published as open data?",
+    "L4": "State of Hawai open data"
+   }
+  },
+  {
+   "topic": "publisher-07",
+   "narrative": "Relevant records are datasets published by Loudoun County, Virginia, whatever their subject. Records from Fairfax County or other Virginia counties and cities, from the Commonwealth of Virginia, or from federal agencies about Loudoun County do not count.",
+   "sub_questions": {
+    "L1": "Loudoun County datasets",
+    "L2": "loudoun county",
+    "L3": "What maps and data does the Loudoun County government in northern Virginia publish?",
+    "L4": "Loudon County datasets"
+   }
+  },
+  {
+   "topic": "spatial-01",
+   "narrative": "Relevant records are geographic datasets -- map layers, boundaries or other spatial data -- whose coverage is the state of Kentucky or an area within it, such as a county, city or watershed in Kentucky. Records from any publisher count. National or multi-state datasets count only if Kentucky is named as a subject of the record. A dataset covering every state does not count merely because Kentucky is among them. Tables without geographic data, and records about other states, do not count.",
+   "sub_questions": {
+    "L1": "Kentucky GIS map layers",
+    "L2": "kentucky maps",
+    "L3": "What mapped data can I use for planning work around Louisville and Lexington?",
+    "L4": "Kentuky GIS map layers"
+   }
+  },
+  {
+   "topic": "spatial-02",
+   "narrative": "Relevant records are geographic datasets -- map layers, boundaries or other spatial data -- whose coverage is the state of Colorado or an area within it, such as a county, city, river basin or mountain range in Colorado. Records from any publisher count. National or multi-state datasets count only if Colorado is named as a subject of the record. A dataset covering every state does not count merely because Colorado is among them. Tables without geographic data, and records about other states, do not count.",
+   "sub_questions": {
+    "L1": "Colorado geospatial data",
+    "L2": "colorado gis",
+    "L3": "What mapped information exists for the Rocky Mountain state around Denver?",
+    "L4": "科罗拉多州的地理空间数据"
+   }
+  },
+  {
+   "topic": "region-01",
+   "narrative": "Relevant records are data on the ocean, coasts or fisheries of Alaska -- marine surveys, fish stocks or catches, sea ice, ocean temperature, coastal habitats or marine mammals -- in Alaskan waters, including the Gulf of Alaska, the Bering Sea, the Aleutian Islands and the Arctic coast. National or multi-region datasets count only if Alaskan waters are named as a subject of the record. A dataset covering all U.S. coastal waters does not count merely because Alaska is among them. Land-only data on Alaska, and marine data on other regions, do not count.",
+   "sub_questions": {
+    "L1": "Alaska marine and fisheries data",
+    "L2": "alaska fisheries",
+    "L3": "What is known about fish stocks and sea conditions in the Bering Sea?",
+    "L4": "Alaksa marine and fisheries data"
+   }
+  },
+  {
+   "topic": "region-02",
+   "narrative": "Relevant records report campaign finance in Hawaii: contributions to or expenditures by candidates, candidate committees or noncandidate committees in Hawaii elections, and their registration or reporting status. Campaign finance data for federal elections or for other states, and Hawaii election results or voter data without campaign finance information, do not count.",
+   "sub_questions": {
+    "L1": "Hawaii campaign contributions and committee expenditures",
+    "L2": "hawaii campaign finance",
+    "L3": "Who donates money to politicians running for office in Honolulu and the rest of the islands?",
+    "L4": "Hawai campain contributions and comittee expenditures"
+   }
+  },
+  {
+   "topic": "graph-01",
+   "narrative": "Relevant records are other datasets belonging to the same family of material as the NOAA record 'SFER CTD, SFER_CTD_WS22337_MR, 2022-12-09, 25.0077N 80.3683W': CTD casts and other water-column profiles -- temperature, salinity, depth, oxygen or chlorophyll measured from ships -- in South Florida waters, including Florida Bay, Biscayne Bay, the Florida Keys and the southwest Florida shelf. The anchor record itself does not count, because the need asks what else relates to it. Sharing a publisher is not on its own sufficient: other NOAA datasets on weather, fisheries or tides do not count. Water-column profiles from other regions, and satellite or model products without ship measurements, do not count.",
+   "sub_questions": {
+    "L1": "datasets related to SFER CTD, SFER_CTD_WS22337_MR, 2022-12-09, 25.0077N 80.3683W",
+    "L2": "SFER CTD related",
+    "L3": "What other water-column measurements were taken on the research cruises that sampled the waters off the Florida Keys?",
+    "L4": "SFER CTD, SFER_CTD_WS22337_MR, 2022-12-09 relatd datasets"
+   }
+  },
+  {
+   "topic": "graph-02",
+   "narrative": "Relevant records are other datasets belonging to the same family of material as the City of Sioux Falls record 'City of Sioux Falls Dashboard': dashboards, hub pages and data portal pages published by the City of Sioux Falls that present the city's information in interactive or summary form. The anchor record itself does not count, because the need asks what else relates to it. Sharing a publisher is not on its own sufficient: Sioux Falls map layers, tables or files that are not presented as a dashboard, hub or portal page do not count. Dashboards and hub pages from other cities do not count.",
+   "sub_questions": {
+    "L1": "datasets related to City of Sioux Falls Dashboard",
+    "L2": "sioux falls dashboard related",
+    "L3": "Where can I find the other interactive summary pages the city of Sioux Falls has set up?",
+    "L4": "City of Siox Falls Dashbord related datasets"
+   }
+  },
+  {
+   "topic": "topic-17",
+   "narrative": "Relevant records report revenues of Hanauma Bay Nature Preserve in Honolulu -- admission fees, parking, concessions and other income, monthly or for a fiscal year. Expenditure reports for Hanauma Bay do not count, and neither do revenues of other City and County of Honolulu parks or facilities, or visitor counts without revenue figures.",
+   "sub_questions": {
+    "L1": "Hanauma Bay revenues",
+    "L2": "hanauma bay revenue",
+    "L3": "How much money does the snorkeling preserve east of Waikiki take in from entry fees?",
+    "L4": "Hanuama Bay revenus"
+   }
+  },
+  {
+   "topic": "topic-18",
+   "narrative": "Relevant records report expenditures of Hanauma Bay Nature Preserve in Honolulu -- operating spending, personnel and maintenance costs, monthly or for a fiscal year. Revenue reports for Hanauma Bay do not count, and neither do expenditures of other City and County of Honolulu parks or departments, or budgets that do not report Hanauma Bay spending.",
+   "sub_questions": {
+    "L1": "Hanauma Bay expenditures",
+    "L2": "hanauma bay spending",
+    "L3": "What does Honolulu spend each year to run the snorkeling preserve?",
+    "L4": "Hanuama Bay expendetures"
+   }
+  },
+  {
+   "topic": "topic-19",
+   "narrative": "Relevant records are data from the Public Libraries Survey -- annual national statistics on public libraries in the United States, such as visits, circulation, collections, staffing, revenue and expenditure, for library systems, outlets or states. The State Library Administrative Agencies Survey does not count, and neither do academic or school library surveys, museum data, or individual libraries' own catalogs and branch lists.",
+   "sub_questions": {
+    "L1": "Public Libraries Survey annual data",
+    "L2": "public library statistics",
+    "L3": "How many visits and loans did libraries across the country record each year?",
+    "L4": "Public Libraires Survey anual data"
+   }
+  },
+  {
+   "topic": "topic-20",
+   "narrative": "Relevant records are small business profiles -- statistical summaries of small businesses, their employment, ownership and finance, for states, territories or congressional districts. Loan program data, procurement and contracting goals, and economic census tables without small business profiles do not count. Records about large businesses or the economy as a whole without a small business breakdown do not count either.",
+   "sub_questions": {
+    "L1": "small business profiles for states and congressional districts",
+    "L2": "small business profiles",
+    "L3": "How many people work for firms with fewer than 500 employees in my congressional district?",
+    "L4": "smal busines profiles"
+   }
+  },
+  {
+   "topic": "topic-21",
+   "narrative": "Relevant records describe land-use zoning -- zoning district maps and layers, zoning overlays, and records of zoning cases, reviews or certificates issued under a zoning code. Comprehensive or future land-use plans without zoning districts do not count, and neither do parcel or property tax data, building permits or school attendance zones.",
+   "sub_questions": {
+    "L1": "zoning districts and zoning maps",
+    "L2": "zoning map",
+    "L3": "Can I open a shop on my lot, or is the area reserved for houses?",
+    "L4": "zonning districts map"
+   }
+  },
+  {
+   "topic": "topic-22",
+   "narrative": "Relevant records report COVID-19 cases, testing or vaccinations -- counts or rates by date, geography or demographic group, and testing or vaccination site locations. Records on COVID-19 economic relief, business licensing, call-center volumes or other indirect effects of the pandemic, without case, testing or vaccination data, do not count. Hospital capacity data count only if they report COVID-19 patients.",
+   "sub_questions": {
+    "L1": "COVID-19 cases, testing and vaccination data",
+    "L2": "covid cases",
+    "L3": "How many people in my county caught the coronavirus, and how many got the shot?",
+    "L4": "COVID-19 vacination and case data"
+   }
+  },
+  {
+   "topic": "topic-23",
+   "narrative": "Relevant records report attendance or absenteeism of students in schools -- daily attendance rates, chronic absenteeism and truancy, by school, district or student group. Attendance at events, venues or programs, employee absenteeism, and absentee ballots in elections do not count. Enrollment counts and test scores without attendance data do not count either.",
+   "sub_questions": {
+    "L1": "school attendance and chronic absenteeism data",
+    "L2": "school attendance",
+    "L3": "How many students regularly miss class at the city's public schools?",
+    "L4": "scool atendance data"
+   }
+  },
+  {
+   "topic": "topic-24",
+   "narrative": "Relevant records report fire department or emergency medical service (EMS) incidents and responses -- fire incidents by type or location, EMS transports and calls, and response times. Fire station locations, fire hydrants, fire inspections and wildfire risk maps without incident data do not count, and neither do police calls for service.",
+   "sub_questions": {
+    "L1": "fire incidents and EMS responses",
+    "L2": "fire incidents",
+    "L3": "How many times was the fire department called out in my town last year, and for what?",
+    "L4": "fire incidnets and EMS respones"
+   }
+  },
+  {
+   "topic": "topic-25",
+   "narrative": "Relevant records report the pay of public employees -- payroll records, salaries by employee or job classification, and pay or compensation summaries for city, county, state or federal workers. Private-sector wage statistics, minimum wage data, pension or benefit payments, and budget documents without employee pay do not count. Counts of employees or positions without pay figures do not count either.",
+   "sub_questions": {
+    "L1": "public employee payroll and salaries",
+    "L2": "government salaries",
+    "L3": "How much does a city police officer earn compared with other city workers?",
+    "L4": "public employe payrol and salaries"
+   }
+  },
+  {
+   "topic": "topic-26",
+   "narrative": "Relevant records report traffic crashes or collisions -- crash incidents, the vehicles and people involved, injuries and fatalities, by location or date. Traffic counts, traffic citations, road condition data and transit safety data without crash records do not count. Crash records count whether they come from police, transportation departments or federal safety programs.",
+   "sub_questions": {
+    "L1": "traffic crash and collision data",
+    "L2": "car crashes",
+    "L3": "Which intersections in my city have the most accidents?",
+    "L4": "trafic crash colision data"
+   }
+  },
+  {
+   "topic": "publisher-08",
+   "narrative": "Relevant records are datasets published by the National Endowment for the Arts, whatever their subject -- arts participation surveys, grant data and research reports. Records from the National Endowment for the Humanities do not count, nor do records from the Institute of Museum and Library Services, state arts agencies or other cultural bodies.",
+   "sub_questions": {
+    "L1": "National Endowment for the Arts datasets",
+    "L2": "nea data",
+    "L3": "What surveys has the federal arts funding agency run on how Americans take part in the arts?",
+    "L4": "National Endowmnet for the Arts datasets"
+   }
+  },
+  {
+   "topic": "publisher-09",
+   "narrative": "Relevant records are datasets published by the Federal Deposit Insurance Corporation, whatever their subject -- bank data, bank failures and assistance, institution events and corporate data. Records from other financial regulators do not count, including the National Credit Union Administration, the Federal Reserve Board, the Federal Housing Finance Agency and the Consumer Financial Protection Bureau.",
+   "sub_questions": {
+    "L1": "FDIC datasets",
+    "L2": "fdic data",
+    "L3": "Which banks failed and were taken over by the agency that insures deposits?",
+    "L4": "Federal Deposit Insurence Corporation datasets"
+   }
+  },
+  {
+   "topic": "publisher-10",
+   "narrative": "Relevant records are datasets published by the U.S. Government Publishing Office, whatever their subject -- records of the Catalog of U.S. Government Publications and other bibliographic or publishing data. Records from the Library of Congress, the National Archives, and federal agencies publishing their own documents do not count. Records about government publications that a body other than the Government Publishing Office released do not count either.",
+   "sub_questions": {
+    "L1": "Government Publishing Office datasets",
+    "L2": "gpo data",
+    "L3": "Where can I download catalog records for federal government publications?",
+    "L4": "Goverment Publishing Ofice datasets"
+   }
+  },
+  {
+   "topic": "publisher-11",
+   "narrative": "Relevant records are datasets published by the Library of Congress, whatever their subject -- bibliographic records for books, maps, music and other materials, and classification and authority data. Records from the Government Publishing Office, the National Archives, the Institute of Museum and Library Services and public libraries do not count.",
+   "sub_questions": {
+    "L1": "Library of Congress datasets",
+    "L2": "library of congress records",
+    "L3": "Can I bulk download the national library's catalog records for books?",
+    "L4": "Libary of Congres datasets"
+   }
+  },
+  {
+   "topic": "publisher-12",
+   "narrative": "Relevant records are datasets published by the City of Baltimore, Maryland, whatever their subject -- police, fire, health, budget and city services. Records from Baltimore County, the State of Maryland or federal agencies do not count, even when they cover Baltimore city. Records from other Maryland cities, such as Annapolis, do not count either.",
+   "sub_questions": {
+    "L1": "City of Baltimore open data",
+    "L2": "baltimore city data",
+    "L3": "What has Charm City's municipal government published about crime and city services?",
+    "L4": "City of Baltimor open data"
+   }
+  },
+  {
+   "topic": "spatial-03",
+   "narrative": "Relevant records are geographic datasets -- map layers, boundaries or other spatial data -- whose coverage is the state of Maryland or an area within it, such as a county, city, watershed or the Maryland part of the Chesapeake Bay. Records from any publisher count. National or multi-state datasets count only if Maryland is named as a subject of the record. Tables without geographic data, and records about other states, do not count.",
+   "sub_questions": {
+    "L1": "Maryland geospatial data",
+    "L2": "maryland gis",
+    "L3": "What mapped layers are available for the state around Annapolis?",
+    "L4": "马里兰州的地理空间数据"
+   }
+  },
+  {
+   "topic": "spatial-04",
+   "narrative": "Relevant records are geographic datasets -- map layers, boundaries or other spatial data -- whose coverage is the state of Vermont or an area within it, such as a county, town, quadrangle or watershed. Records from any publisher count. National or multi-state datasets count only if Vermont is named as a subject of the record. Tables without geographic data, and records about other states, do not count.",
+   "sub_questions": {
+    "L1": "Vermont geospatial data",
+    "L2": "vermont gis",
+    "L3": "What maps exist for the Green Mountain State?",
+    "L4": "Vermont geospatail data"
+   }
+  },
+  {
+   "topic": "region-04",
+   "narrative": "Relevant records concern Texas or a place within it, whatever their subject -- state agency data, environmental compliance, agriculture and water research, health and community programs. National or multi-state datasets count only if Texas is named as a subject of the record; a dataset covering every state does not count merely because Texas is among them. Records about other states do not count.",
+   "sub_questions": {
+    "L1": "datasets about Texas",
+    "L2": "texas data",
+    "L3": "What public data is there about the Lone Star State?",
+    "L4": "Texsa datasets"
+   }
+  },
+  {
+   "topic": "region-05",
+   "narrative": "Relevant records report liquor sales in Iowa -- wholesale or retail sales of spirits by store, product, vendor, county or date, as recorded by the state's alcoholic beverages authority. Liquor licensing, alcohol sales in other states, and Iowa tax or retail data without liquor sales do not count. National or multi-state datasets count only if Iowa is named as a subject of the record.",
+   "sub_questions": {
+    "L1": "Iowa liquor sales",
+    "L2": "iowa liquor",
+    "L3": "Which stores in Des Moines sell the most vodka?",
+    "L4": "Iowa liqour sales"
+   }
+  },
+  {
+   "topic": "region-06",
+   "narrative": "Relevant records report the public finances of the State of Oklahoma -- state payroll, vendor payments, revolving funds, investment performance, budgets and expenditures of state agencies. Oklahoma records on other subjects, and public finance data for other states or for Oklahoma cities and counties, do not count. National or multi-state datasets count only if Oklahoma is named as a subject of the record.",
+   "sub_questions": {
+    "L1": "Oklahoma state finances: payroll, payments, funds and investments",
+    "L2": "oklahoma state spending",
+    "L3": "How does the Sooner State spend its money, and how have its investments performed?",
+    "L4": "Oklahma state finances"
+   }
+  },
+  {
+   "topic": "graph-03",
+   "narrative": "Relevant records are other datasets belonging to the same family of material as the National Credit Union Administration record 'Congressional Support Data': NCUA's data inventories on its external relations and communications -- interactions with Congress, public communications and media support, consumer and public inquiries, ombudsman complaints and its public website. The anchor record itself does not count, because the need asks what else relates to it. Sharing a publisher is not on its own sufficient: NCUA data on examinations, credit union call reports, finance or internal administration do not count.",
+   "sub_questions": {
+    "L1": "datasets related to Congressional Support Data",
+    "L2": "congressional support data related",
+    "L3": "What else does the credit union regulator keep on its dealings with Congress and the public?",
+    "L4": "Congresional Support Data related datasets"
+   }
+  }
+ ]
+}

@@ -1,0 +1,506 @@
+{
+ "corpus": "au",
+ "portal": "data.gov.au",
+ "topics": [
+  {
+   "topic": "topic-01",
+   "narrative": "Relevant records report gaming or gambling expenditure -- for example losses on electronic gaming machines -- together with population or population-density figures, broken down by local government area. Statistical reports, tables and data extracts that carry both measures at that geographic level count, from any publisher. Records covering only resident population or demographic profile, with no gambling or gaming measure, do not count; neither do gambling records that carry no population figures, nor records that report either measure only at state or national level.",
+   "sub_questions": {
+    "L1": "population density and gaming expenditure by local government area",
+    "L2": "gaming expenditure lga",
+    "L3": "Do council areas with more residents lose more money on poker machines?",
+    "L4": "population densty and gaming expendature by LGA"
+   }
+  },
+  {
+   "topic": "topic-02",
+   "narrative": "Relevant records describe the road transport network itself: the location, extent, classification or condition of roads, road segments, highways and the assets that support them. Road centreline and network layers, road hierarchy or classification datasets, and road condition, surface or maintenance records all count. Records about other transport modes count only when the road network is itself part of what they describe. Records that describe use of the network or its outcomes rather than the network itself -- traffic volumes, crash and casualty statistics, vehicle registrations -- do not count.",
+   "sub_questions": {
+    "L1": "road transportation network datasets",
+    "L2": "road network",
+    "L3": "What information exists about the layout and condition of Australian roads?",
+    "L4": "road transportaion network data"
+   }
+  },
+  {
+   "topic": "topic-03",
+   "narrative": "Relevant records are studies, reports, or datasets that assess flood behaviour, flood risk, or floodplain extent along the Murray River in the vicinity of Albury-Wodonga. Modelling reports, mapped flood extents and floodplain management plans all count. Records about the Murray River that do not concern flooding, and flood studies for other river systems, do not count.",
+   "sub_questions": {
+    "L1": "flood studies along the Murray River near Albury",
+    "L2": "albury flood study",
+    "L3": "Which parts of the Murray floodplain around Albury have been assessed for flood risk?",
+    "L4": "Albery Murray River flood studies"
+   }
+  },
+  {
+   "topic": "topic-04",
+   "narrative": "Relevant records concern the Eastern Treatment Plant specifically: its operation, the quality of the water or effluent it handles, its discharges, or the assets and monitoring programmes attached to it. Measurement series, monitoring reports, and asset or process descriptions naming that plant count. Wastewater records for other treatment plants, or for the sewerage network at large, do not count, and neither do records from the same publisher that have nothing to do with wastewater.",
+   "sub_questions": {
+    "L1": "Eastern Treatment Plant wastewater datasets",
+    "L2": "eastern treatment plant",
+    "L3": "What is measured at Melbourne's main sewage treatment works?",
+    "L4": "Eastern Treament Plant waste water data"
+   }
+  },
+  {
+   "topic": "spatial-01",
+   "narrative": "Relevant records are datasets published by Mitchell Shire Council that carry spatial content -- mapped locations, boundaries or geographic layers covering the shire. Any of that council's mapped asset, boundary, planning or facility layers count, whatever the subject matter. Records published by other councils or by state and national agencies do not count, even when their coverage includes the shire as part of a wider mapped extent. Mitchell Shire Council records with no mapped or spatial component do not count either.",
+   "sub_questions": {
+    "L1": "spatial datasets published by Mitchell Shire Council",
+    "L2": "mitchell shire data",
+    "L3": "Where are the public assets mapped in the shire north of Melbourne?",
+    "L4": "Mitchel Shire Council spatial datasets"
+   }
+  },
+  {
+   "topic": "spatial-02",
+   "narrative": "Relevant records describe wastewater or sewerage infrastructure -- treatment plants, sewers, pumping stations, outfalls and related assets -- whose coverage lies principally within Victoria. Asset layers, network maps and infrastructure inventories for Victorian wastewater systems count. Wastewater datasets for other states or regions do not count. Datasets whose coverage is national or spans several states do not count either, even when Victoria falls inside that wider extent, because their subject is not the Victorian network. Victorian datasets about drinking water supply, stormwater drainage or waterways that do not concern wastewater do not count.",
+   "sub_questions": {
+    "L1": "wastewater infrastructure datasets covering Victoria",
+    "L2": "melbourne wastewater",
+    "L3": "Where does Melbourne's sewage network run?",
+    "L4": "waste water infrastucture Victora"
+   }
+  },
+  {
+   "topic": "spatial-03",
+   "narrative": "Relevant records are datasets published by Maribyrnong City Council that carry spatial content -- mapped locations, boundaries or geographic layers for the municipality. Any of that council's mapped asset, boundary, planning, facility or amenity layers count, whatever the subject matter. Records published by other councils, by state agencies, or by national programmes do not count, even when their coverage happens to include the municipality as part of a wider mapped extent. Council records with no mapped or spatial component do not count either.",
+   "sub_questions": {
+    "L1": "spatial datasets published by Maribyrnong City Council",
+    "L2": "maribyrnong council data",
+    "L3": "What is mapped in the inner-western suburbs of Melbourne around Footscray?",
+    "L4": "墨尔本 Maribyrnong 市议会 空间数据"
+   }
+  },
+  {
+   "topic": "publisher-01",
+   "narrative": "Relevant records are datasets about recorded crime -- offences, offenders, victims, or criminal incidents -- published by the Crime Statistics Agency. Recorded-offence counts, offender and victim statistics, and the data tables that accompany them all count. Crime datasets published by any other body, such as a police force or a general statistical agency, do not count, and Crime Statistics Agency records that are not about crime do not count either.",
+   "sub_questions": {
+    "L1": "crime datasets published by the Crime Statistics Agency",
+    "L2": "crime statistics agency",
+    "L3": "Where can I find official recorded offence figures for Victoria?",
+    "L4": "Crime Statistic Agency crime datasets"
+   }
+  },
+  {
+   "topic": "publisher-02",
+   "narrative": "Relevant records are datasets about the First Home Owner Grant -- applications, approvals, or amounts paid -- published by the State Revenue Office. Grant statistics and the data tables accompanying them count, including breakdowns by postcode, region or period. Datasets about other State Revenue Office programmes, such as land tax or stamp duty, do not count, and First Home Owner Grant material published by another body does not count.",
+   "sub_questions": {
+    "L1": "First Home Owner Grant datasets from the State Revenue Office",
+    "L2": "first home owner grant",
+    "L3": "How many people claimed the first home buyer grant, and in which postcodes?",
+    "L4": "First Home Owners Grant data from the State Revene Office"
+   }
+  },
+  {
+   "topic": "graph-01",
+   "narrative": "Relevant records are other datasets belonging to the same family of material as the Barwon Water Water Assets layer: companion layers describing the same kind of water and sewerage infrastructure and the areas it serves -- pipes and mains, treatment and storage assets, pump stations, service or supply boundaries, and comparable utility asset layers. The Barwon Water Water Assets dataset itself does not count, because the need asks what else relates to it. Sharing a publisher is not on its own sufficient: a dataset from the same water authority on an unrelated subject, such as a corporate report or a customer survey, does not count. Records concerning water in general that share no asset-layer character with it -- water quality studies elsewhere, national hydrology layers -- do not count.",
+   "sub_questions": {
+    "L1": "datasets related to Barwon Water Water Assets",
+    "L2": "barwon water assets related",
+    "L3": "What else does the Geelong region water authority publish alongside its asset layers?",
+    "L4": "Barwon Water Water Assets related datsets"
+   }
+  },
+  {
+   "topic": "graph-02",
+   "narrative": "Relevant records are other datasets belonging to the same family of material as the Manningham Traffic Signals layer: companion mapped asset or infrastructure layers of the same kind and level of detail -- signs, street furniture, road and traffic infrastructure, footpaths, drainage and comparable managed assets. The Manningham Traffic Signals dataset itself does not count. Sharing a publisher is not on its own sufficient: a council dataset on an unrelated subject, such as a budget or a community survey, does not count. Traffic signal or road asset layers published by other councils or by state road agencies do not count.",
+   "sub_questions": {
+    "L1": "datasets related to Manningham Traffic Signals",
+    "L2": "manningham traffic signals related",
+    "L3": "What other asset layers does Manningham council publish?",
+    "L4": "Maningham Traffic Signals related datasets"
+   }
+  },
+  {
+   "topic": "topic-05",
+   "narrative": "Relevant records report the number of jobs or employed persons in central Melbourne broken down by industry, by city block or by another small area -- the annual census of land use and employment series and any equivalent count of employment by industry for the same area. Records that report employment for a whole state or the country, unemployment rates, or labour force surveys with no industry breakdown do not count. Counts of business establishments or floor space that carry no employment figure do not count either.",
+   "sub_questions": {
+    "L1": "employment by industry for City of Melbourne blocks",
+    "L2": "melbourne jobs by block",
+    "L3": "Which parts of central Melbourne have the most retail jobs?",
+    "L4": "employmnet by industry for melbourne blocks"
+   }
+  },
+  {
+   "topic": "topic-06",
+   "narrative": "Relevant records count business establishments, or measure floor space and how it is used, for city blocks or small areas in central Melbourne -- establishment counts by industry and floor space usage by block, for any year. Records that report only the number of jobs, employment by industry, or resident population do not count. Property valuations, building permits and development applications do not count unless they report floor space for the same small areas.",
+   "sub_questions": {
+    "L1": "business establishments and floor space by block in the City of Melbourne",
+    "L2": "melbourne floor space data",
+    "L3": "How much of the city centre is occupied by cafes and bars?",
+    "L4": "busines establishments and floorspace by block melbourne"
+   }
+  },
+  {
+   "topic": "topic-07",
+   "narrative": "Relevant records provide sea surface temperature measured or derived from satellite sensors -- gridded products, single-sensor or multi-sensor composites, and the time series built from them. Records that measure water temperature in the water itself, from moorings, ships, floats or gliders, do not count. Satellite products for other variables such as ocean colour, sea level or salinity do not count, and neither do air temperature records.",
+   "sub_questions": {
+    "L1": "satellite sea surface temperature products for Australian waters",
+    "L2": "sst satellite data",
+    "L3": "I need a long time series of ocean surface temperature to check a marine heatwave.",
+    "L4": "satelite sea surace temperture products"
+   }
+  },
+  {
+   "topic": "topic-08",
+   "narrative": "Relevant records hold temperature, salinity or conductivity measured in the water column by instruments in the ocean -- moorings, CTD casts, profiling floats, gliders or ship-borne sensors -- reported as an observational time series or as profiles. Satellite-derived sea surface temperature products do not count. Records for other variables such as currents, biogeochemistry or acoustics count only when temperature or salinity is part of the same record.",
+   "sub_questions": {
+    "L1": "in situ ocean temperature and salinity time series from moorings",
+    "L2": "mooring temperature data",
+    "L3": "I need measured water temperature at depth, not satellite estimates.",
+    "L4": "in-situ ocan temperture and salinty from moorings"
+   }
+  },
+  {
+   "topic": "topic-09",
+   "narrative": "Relevant records hold measurements taken at fixed, repeatedly visited vegetation plots -- species composition, cover, structure or tree demography recorded at a named plot network over time. One-off regional biological surveys, vegetation maps and modelled extent layers do not count. Records about soil, fauna or fire history count only when they were collected at the same plots and are released as part of that plot network's data.",
+   "sub_questions": {
+    "L1": "long-term vegetation plot network survey data",
+    "L2": "vegetation plots",
+    "L3": "How is alpine vegetation changing at sites that are surveyed again and again?",
+    "L4": "long term vegetatoin plot network surveys"
+   }
+  },
+  {
+   "topic": "topic-10",
+   "narrative": "Relevant records report measured water quality in inland or coastal waters -- nutrients, turbidity, chlorophyll, dissolved oxygen, salinity or bacterial counts -- as observations at sampling sites or as a monitoring time series for a river, estuary, lake or bay. Drinking water supply and treatment records count only when they report measured water quality. Modelled or predicted water quality with no measurements does not count, and neither do records of water quantity, flow or storage levels alone.",
+   "sub_questions": {
+    "L1": "water quality monitoring data for rivers, estuaries and bays",
+    "L2": "water quality data",
+    "L3": "Has the water in the estuary got worse since the treatment plant was upgraded?",
+    "L4": "water qualty monitering data for rivers and estuarys"
+   }
+  },
+  {
+   "topic": "topic-11",
+   "narrative": "Relevant records hold gravity observations from ground, airborne or marine surveys -- point readings, station data, or the survey reports and acquisition documents that release them. Records for other geophysical methods, such as magnetics, radiometrics or seismic reflection, do not count unless gravity data is part of the same release. Interpreted geological maps and basin models that draw on gravity but publish no gravity measurements do not count.",
+   "sub_questions": {
+    "L1": "ground gravity survey data",
+    "L2": "gravity survey",
+    "L3": "What survey measurements are available to model the subsurface structure of a basin?",
+    "L4": "gravty survey data"
+   }
+  },
+  {
+   "topic": "topic-12",
+   "narrative": "Relevant records provide water depth or seafloor terrain -- multibeam or single-beam soundings, gridded depth models, and the survey extent layers that describe where such data was collected. Seabed imagery, sediment samples and habitat classifications count only when depth or terrain data is part of the same record. Records about the water column, marine life, or seismic reflection profiles do not count.",
+   "sub_questions": {
+    "L1": "bathymetry and seabed mapping data",
+    "L2": "bathymetry data",
+    "L3": "Where can I get depth and seafloor terrain data for a coastal survey?",
+    "L4": "bathimetry and seabed maping data"
+   }
+  },
+  {
+   "topic": "topic-13",
+   "narrative": "Relevant records list contracts awarded by a government agency or public body -- supplier, value, dates or contract description -- published as a disclosure report or register. Annual report data about staff, travel or executive remuneration does not count. Procurement policies, tender opportunities that have not been awarded, and grant or subsidy payment records do not count either.",
+   "sub_questions": {
+    "L1": "government contract disclosure reports",
+    "L2": "contract disclosure",
+    "L3": "Which suppliers has a state agency signed contracts with, and for how much?",
+    "L4": "goverment contract disclosere reports"
+   }
+  },
+  {
+   "topic": "topic-14",
+   "narrative": "Relevant records report, for a government agency or public body, either the remuneration and number of its senior executives, or the details and cost of official overseas travel by its staff. Both belong to the annual report disclosure family and either one on its own is enough. Records covering total agency expenditure, staff head counts with no remuneration figures, contracts with suppliers, or fleet and vehicle costs do not count.",
+   "sub_questions": {
+    "L1": "executive employment and overseas travel disclosures in annual report data",
+    "L2": "overseas travel disclosure",
+    "L3": "How much do public agencies spend sending staff overseas, and what do their executives earn?",
+    "L4": "exective employment and oversaes travel disclosures"
+   }
+  },
+  {
+   "topic": "topic-15",
+   "narrative": "Relevant records publish an indicator of the health, development, safety, learning or wellbeing of children and young people, reported as a rate or a proportion for a population. Indicator series that track children's outcomes over time count, whatever the publisher. School enrolment counts, school locations, zone boundaries and staffing figures do not count. Records about adults, or about services and funding with no measure of children's outcomes, do not count.",
+   "sub_questions": {
+    "L1": "child and adolescent wellbeing indicators for Victoria",
+    "L2": "child wellbeing indicators",
+    "L3": "What is published about how children in the state are doing at school and at home?",
+    "L4": "child and adolesent wellbeing indicaters victoria"
+   }
+  },
+  {
+   "topic": "topic-16",
+   "narrative": "Relevant records describe the rocks and geological structure of Victoria -- geological maps, stratigraphic descriptions, borehole and outcrop compilations, and reports interpreting them. Petroleum and hydrocarbon accumulation reports count only when they are principally a description of the geology. Geophysical survey measurements, groundwater datasets and mineral licence or tenement records do not count.",
+   "sub_questions": {
+    "L1": "geological maps and stratigraphy of Victoria",
+    "L2": "victoria geology",
+    "L3": "What describes the rock formations underneath the state?",
+    "L4": "geological maps and stratigrphy of victoria"
+   }
+  },
+  {
+   "topic": "publisher-03",
+   "narrative": "Relevant records are datasets published by Melbourne Water -- its catchment, waterway, drainage, water supply, sewerage and land layers, and its monitoring and water usage series, whatever the subject. Records published by retail water corporations, by councils or by state departments do not count, even when they describe the same waterways or the same water system.",
+   "sub_questions": {
+    "L1": "datasets published by Melbourne Water",
+    "L2": "melbourne water data",
+    "L3": "What does the agency that manages Melbourne's water catchments release publicly?",
+    "L4": "datasets publised by melborne water"
+   }
+  },
+  {
+   "topic": "publisher-04",
+   "narrative": "Relevant records are datasets published by Surf Coast Shire Council -- its facility, asset, boundary, service and community layers and registers, whatever the subject matter. Records published by other councils, by regional bodies or by state agencies do not count, even when their coverage includes the shire.",
+   "sub_questions": {
+    "L1": "datasets published by Surf Coast Shire Council",
+    "L2": "surf coast shire data",
+    "L3": "What open data does the council covering Torquay and Anglesea publish?",
+    "L4": "datasets from serf coast shire counsil"
+   }
+  },
+  {
+   "topic": "publisher-05",
+   "narrative": "Relevant records are datasets released by the Bioregional Assessment Program that describe the Gippsland region -- its groundwater, surface water, ecological assets, mining and land use footprints, and the derived layers built for that assessment. Bioregional Assessment datasets for other regions do not count. Gippsland records published by other bodies -- geological surveys, petroleum reports, marine seismic and imagery surveys -- do not count either.",
+   "sub_questions": {
+    "L1": "Bioregional Assessment Program datasets for the Gippsland region",
+    "L2": "gippsland bioregional assessment",
+    "L3": "What data backs the water resource assessment for coal and gas development in Gippsland?",
+    "L4": "bioregional assesment datasets for gipsland"
+   }
+  },
+  {
+   "topic": "publisher-06",
+   "narrative": "Relevant records are anticipatory notices, varied notices and declarations lodged by Myport Pty Ltd on the statutory infrastructure provider register. Notices lodged by other providers do not count, even when they cover the same suburb or the same month. General telecommunications policy, broadband performance measurement and network coverage datasets do not count.",
+   "sub_questions": {
+    "L1": "anticipatory notices and declarations lodged by Myport Pty Ltd",
+    "L2": "myport anticipatory notice",
+    "L3": "Which areas has that broadband provider declared it will service?",
+    "L4": "anticipatry notices lodged by myport pty ltd"
+   }
+  },
+  {
+   "topic": "publisher-07",
+   "narrative": "Relevant records are datasets published by the City of Sydney council -- its asset, facility, boundary, planning, environment and community layers and counts, whatever the subject matter. Records published by other Sydney-area councils, by the New South Wales state government or by federal agencies do not count, even when they cover the city centre.",
+   "sub_questions": {
+    "L1": "datasets published by the City of Sydney council",
+    "L2": "city of sydney data",
+    "L3": "What open data does the council for central Sydney publish?",
+    "L4": "datasets publised by the council of the city of sidney"
+   }
+  },
+  {
+   "topic": "region-01",
+   "narrative": "Relevant records describe the marine or coastal environment of Port Phillip Bay -- its water quality, nutrients, sediments, seabed, habitats or marine life, and studies of what enters the bay from catchments and outfalls. Records published by the City of Port Phillip council about its own facilities and services do not count. Records for other bays, or for Victorian waters in general, do not count unless Port Phillip Bay is one of the subjects of the record.",
+   "sub_questions": {
+    "L1": "environmental studies and monitoring data for Port Phillip Bay",
+    "L2": "port phillip bay data",
+    "L3": "What has been measured about nutrients and habitats in the bay next to Melbourne?",
+    "L4": "enviromental data for port philip bay"
+   }
+  },
+  {
+   "topic": "region-02",
+   "narrative": "Relevant records concern flooding or floodplain management in the Lachlan River catchment or the towns along it -- flood studies, floodplain risk management studies and plans, hydraulic and hydrologic model inputs and outputs, mapped flood extents, and flood warning system reports for that catchment. Flood studies for other catchments do not count. Records about the Lachlan catchment that are not about flooding, such as water sharing plans, land use or vegetation mapping, do not count.",
+   "sub_questions": {
+    "L1": "flood studies and floodplain management data for the Lachlan River catchment",
+    "L2": "lachlan river flood",
+    "L3": "Which towns along that inland river have published flood studies?",
+    "L4": "flood studys for the lachlan river catchmnet"
+   }
+  },
+  {
+   "topic": "topic-17",
+   "narrative": "Relevant records are inventories of trees managed by a council or other authority -- street trees, park trees, significant or heritage tree registers and urban forest data that give the location, species, size or condition of individual trees. Vegetation mapping, native vegetation extent, long-term forest plots and ecological surveys of trees in natural areas do not count, and neither do tree planting policies or programmes without a tree inventory.",
+   "sub_questions": {
+    "L1": "street tree inventories and significant tree registers",
+    "L2": "street trees",
+    "L3": "Which species are planted along the footpaths in my suburb and how big are they?",
+    "L4": "stret tree inventries and signficant tree registers"
+   }
+  },
+  {
+   "topic": "topic-18",
+   "narrative": "Relevant records give the locations of public toilets, including accessible toilets, adult change facilities and amenity blocks, with or without opening hours and facility details. Records on other public amenities such as drinking fountains, barbecues or playgrounds count only if they include toilets. Plumbing regulation, sewerage infrastructure and wastewater data do not count.",
+   "sub_questions": {
+    "L1": "public toilet locations",
+    "L2": "public toilets",
+    "L3": "Where can I find an accessible bathroom when I am out in town?",
+    "L4": "publc toilet locatons"
+   }
+  },
+  {
+   "topic": "topic-19",
+   "narrative": "Relevant records provide ocean colour measured or derived from satellite sensors -- chlorophyll-a concentration, phytoplankton indicators or other water-leaving radiance products, and the gridded composites or time series built from them. Ocean colour and chlorophyll measured in the water from ships, moorings or bottle samples do not count. Satellite products for other variables, such as sea surface temperature or sea level, do not count.",
+   "sub_questions": {
+    "L1": "satellite ocean colour and chlorophyll-a products for Australian waters",
+    "L2": "ocean colour satellite",
+    "L3": "I want to see where algal blooms show up in the seas around Australia from space.",
+    "L4": "satelite ocean color clorophyll products"
+   }
+  },
+  {
+   "topic": "topic-20",
+   "narrative": "Relevant records describe household waste and recycling collection services run by councils -- kerbside bin collection zones, collection days and routes, and tonnages of garbage, recycling, green or food waste collected from households. Landfills and transfer stations, wastewater and sewerage, industrial or hazardous waste regulation, and litter or illegal dumping reports do not count.",
+   "sub_questions": {
+    "L1": "kerbside waste and recycling collection",
+    "L2": "bin collection",
+    "L3": "Which day is the recycling bin picked up on my street?",
+    "L4": "kerbside wast and recyling colection"
+   }
+  },
+  {
+   "topic": "topic-21",
+   "narrative": "Relevant records report measurements of solar ultraviolet radiation -- the UV index or erythemal UV levels measured at monitoring sites, as time series or daily summaries. Other solar radiation measures such as sunshine hours or solar exposure for energy do not count, and neither do ionising radiation records or skin cancer statistics.",
+   "sub_questions": {
+    "L1": "ultraviolet radiation index measurements",
+    "L2": "uv index",
+    "L3": "How strong is the sunburn risk in Brisbane at midday through the year?",
+    "L4": "ultravoilet radiation index mesurements"
+   }
+  },
+  {
+   "topic": "topic-22",
+   "narrative": "Relevant records report counts or concentrations of airborne pollen or fungal spores collected at aerobiology monitoring sites, by site and date. Records describing plant species, flowering or vegetation without airborne pollen counts do not count, and neither do pollen grains preserved in sediment cores, measurements of air pollutants, or asthma and hay fever statistics without pollen counts.",
+   "sub_questions": {
+    "L1": "airborne pollen counts",
+    "L2": "pollen count",
+    "L3": "When is the grass season worst for hay fever sufferers in Canberra?",
+    "L4": "airbourne polen counts"
+   }
+  },
+  {
+   "topic": "topic-23",
+   "narrative": "Relevant records are airborne or ground magnetic survey data -- magnetic line data, total magnetic intensity grids and magnetic images derived from geophysical surveys. Radiometric (gamma-ray) data from the same surveys do not count, and neither do gravity, seismic or electromagnetic surveys, or geological maps and interpretations that do not include the magnetic data themselves.",
+   "sub_questions": {
+    "L1": "airborne magnetic survey grids and line data",
+    "L2": "aeromagnetic data",
+    "L3": "Which surveys recorded variations in the Earth's field over Gippsland from the air?",
+    "L4": "airbourne magnetc survey grids"
+   }
+  },
+  {
+   "topic": "topic-24",
+   "narrative": "Relevant records map the extent of bushfires or planned burns -- fire boundaries, burnt area and fire severity mapping, or fire history layers recording where and when fires occurred. Fire danger ratings, fire weather, fire station locations, bushfire-prone land planning overlays, and recovery grants or reports without mapped fire extents do not count.",
+   "sub_questions": {
+    "L1": "bushfire extent and burnt area boundaries",
+    "L2": "bushfire boundaries",
+    "L3": "Which areas burned during the Black Summer fires?",
+    "L4": "bushfrie burnt area boundries"
+   }
+  },
+  {
+   "topic": "topic-25",
+   "narrative": "Relevant records report ambient air quality -- measured concentrations of pollutants such as particulate matter (PM2.5, PM10), ozone, nitrogen dioxide or sulfur dioxide at monitoring stations, air quality indices, and summaries or inventories of air pollutant emissions. Indoor air, pollen counts, greenhouse gas accounts and weather records without pollutant data do not count.",
+   "sub_questions": {
+    "L1": "ambient air quality monitoring of particulate matter and pollutants",
+    "L2": "air quality data",
+    "L3": "How polluted was the air around Melbourne during the smoky summer?",
+    "L4": "ambiant air qualty monitoring"
+   }
+  },
+  {
+   "topic": "topic-26",
+   "narrative": "Relevant records are radiometric (gamma-ray spectrometric) survey data -- potassium, thorium and uranium line data or grids, total count grids and ternary images from airborne or ground surveys, and gamma-ray logs. Magnetic data from the same surveys do not count, and neither do gravity, seismic or electromagnetic surveys or geological maps. Records about uranium deposits, mining or radiation safety without gamma-ray survey data do not count.",
+   "sub_questions": {
+    "L1": "airborne radiometric potassium, thorium and uranium grids",
+    "L2": "radiometrics data",
+    "L3": "Where do the rocks and soils give off the most natural radioactivity?",
+    "L4": "airbourne radiometirc grids"
+   }
+  },
+  {
+   "topic": "publisher-08",
+   "narrative": "Relevant records are records lodged by Lynham Networks Pty Ltd on the statutory infrastructure provider register, whatever their subject or area -- anticipatory notices, varied notices and declarations. Notices lodged by other providers on the same register, such as Myport Pty Ltd, Netbay Free WiFi or Frontier Networks, do not count, even when they cover the same suburb or the same month. General telecommunications policy, broadband performance and network coverage datasets do not count.",
+   "sub_questions": {
+    "L1": "statutory infrastructure provider notices lodged by Lynham Networks Pty Ltd",
+    "L2": "lynham networks notices",
+    "L3": "Which new estates has that Gold Coast broadband provider declared it will service?",
+    "L4": "lynham netwroks anticipatory notices"
+   }
+  },
+  {
+   "topic": "publisher-09",
+   "narrative": "Relevant records are datasets published by Libraries Tasmania, whatever their subject -- library locations and services, catalogues, and the archives and heritage collections it holds. Records published by other libraries or archives, such as the State Library of Queensland, the State Library of New South Wales or the State Records Office of Western Australia, do not count, and neither do Tasmanian government records published by other agencies.",
+   "sub_questions": {
+    "L1": "datasets published by Libraries Tasmania",
+    "L2": "libraries tasmania data",
+    "L3": "What has the island state's public library and archive service made available?",
+    "L4": "Libararies Tasmania datasets"
+   }
+  },
+  {
+   "topic": "publisher-10",
+   "narrative": "Relevant records are datasets published by the Building and Plumbing Commission, whatever their subject -- for example building permit activity, practitioner registration or security of payment data. Records from other bodies with related remits do not count, including local councils that issue permits, planning departments and the Australian Bureau of Statistics' building activity series, even when they cover the same subject.",
+   "sub_questions": {
+    "L1": "datasets published by the Building and Plumbing Commission",
+    "L2": "building commission data",
+    "L3": "What does Victoria's building and plumbing regulator publish?",
+    "L4": "Bulding and Plumbing Comission datasets"
+   }
+  },
+  {
+   "topic": "publisher-11",
+   "narrative": "Relevant records are datasets published by the Australian Bureau of Agricultural and Resource Economics and Sciences (ABARES), whatever their subject -- farm surveys, agricultural and fisheries statistics, land use or forest data. Records from other bodies do not count, including the Australian Bureau of Statistics, the Australian Fisheries Management Authority and state primary industries departments, even on the same agricultural subject.",
+   "sub_questions": {
+    "L1": "datasets published by ABARES",
+    "L2": "abares data",
+    "L3": "What does the federal agricultural economics research bureau publish about farms and forests?",
+    "L4": "Australian Bureau of Agricultral and Resource Economics datasets"
+   }
+  },
+  {
+   "topic": "publisher-12",
+   "narrative": "Relevant records are datasets published by Infrastructure Australia, whatever their subject -- for example the audit of access to infrastructure, travel times to services, or infrastructure priority data. Records from other bodies do not count, including state infrastructure agencies such as Infrastructure NSW or Infrastructure Victoria, transport departments and the Bureau of Infrastructure and Transport Research Economics, even on the same topic.",
+   "sub_questions": {
+    "L1": "datasets published by Infrastructure Australia",
+    "L2": "infrastructure australia data",
+    "L3": "How long does it take people in country towns to reach the nearest hospital, according to the national infrastructure adviser?",
+    "L4": "Infrastucture Australia datasets"
+   }
+  },
+  {
+   "topic": "spatial-04",
+   "narrative": "Relevant records are geographic datasets -- map layers, boundaries, building models or other spatial data -- whose coverage is the City of Yarra in inner Melbourne or a place within it, such as Richmond, Collingwood, Fitzroy or Abbotsford. Records from any publisher count, including the council's own asset, planning and facility layers. Victorian or national datasets count only if the City of Yarra is named as a subject of the record. Yarra records with no mapped or spatial component, and records about the Yarra River or Yarra Valley outside the municipality, do not count.",
+   "sub_questions": {
+    "L1": "City of Yarra spatial datasets",
+    "L2": "yarra council maps",
+    "L3": "What mapped layers exist for the inner-city suburbs around Richmond and Fitzroy?",
+    "L4": "墨尔本 Yarra 市 空间数据"
+   }
+  },
+  {
+   "topic": "spatial-05",
+   "narrative": "Relevant records are geographic datasets -- map layers, boundaries or other spatial data -- whose coverage is the City of Casey in Melbourne's south-east or a place within it, such as Cranbourne, Narre Warren or Berwick. Records from any publisher count, including the council's own asset, planning and facility layers. Victorian or national datasets count only if the City of Casey is named as a subject of the record. Casey records with no mapped or spatial component do not count, and neither do records for neighbouring Greater Dandenong or Cardinia.",
+   "sub_questions": {
+    "L1": "City of Casey spatial datasets",
+    "L2": "casey council maps",
+    "L3": "What maps are available for the growth suburbs around Cranbourne and Narre Warren?",
+    "L4": "City of Casy spatial datsets"
+   }
+  },
+  {
+   "topic": "region-03",
+   "narrative": "Relevant records describe the Great Barrier Reef or its waters, islands and catchments -- coral, fish and other marine life, water quality, habitats, reef surveys and the management of the marine park. Records about other reefs, such as Ningaloo or the Coral Sea reefs outside the Great Barrier Reef, do not count. National or Queensland-wide datasets count only if the Great Barrier Reef is named as a subject of the record.",
+   "sub_questions": {
+    "L1": "environmental and biological data for the Great Barrier Reef",
+    "L2": "great barrier reef data",
+    "L3": "What surveys have tracked coral bleaching off the Queensland coast?",
+    "L4": "great barier reef enviromental data"
+   }
+  },
+  {
+   "topic": "region-04",
+   "narrative": "Relevant records concern the Hunter region of New South Wales -- the Hunter River and its estuary, the Hunter Valley and the local government areas within it, such as Muswellbrook, Singleton, Maitland, Cessnock, Newcastle and Upper Hunter -- whatever their subject, including flood studies, water, environment, land and planning data. National or New South Wales-wide datasets count only if the Hunter region or a place within it is named as a subject of the record. Records about other New South Wales regions do not count.",
+   "sub_questions": {
+    "L1": "datasets about the Hunter region of New South Wales",
+    "L2": "hunter valley data",
+    "L3": "What flood and river information is there for the wine and coal country north-west of Newcastle?",
+    "L4": "Huntr Valey region datasets"
+   }
+  },
+  {
+   "topic": "graph-03",
+   "narrative": "Relevant records are other datasets belonging to the same family of material as the Inner West Council record 'Hawthorne Canal Flood Study - Report': the Hawthorne Canal flood study's companion data -- its hydraulic models, survey data, maps and appendices -- and the Dobroyd and Hawthorne Canal floodplain risk management study and plan that builds on it. The anchor report itself does not count, because the need asks what else relates to it. Sharing a publisher is not on its own sufficient: Inner West Council flood studies for other catchments, such as Cooks River, Alexandra Canal, Leichhardt or Marrickville Valley, do not count.",
+   "sub_questions": {
+    "L1": "datasets related to Hawthorne Canal Flood Study - Report",
+    "L2": "hawthorne canal flood study related",
+    "L3": "What models and survey data sit behind the flood study for the canal through Haberfield and Leichhardt?",
+    "L4": "Hawthorne Canal Flood Studdy - Report related datasets"
+   }
+  }
+ ]
+}

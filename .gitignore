@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+
+# Harvested catalogue records, derived indexes and caches (see DATA.md).
+data/
+cache/
+# also when data and cache are symlinks
+/data
+/cache
+
+# UI runtime files (ui/run_ui.sh): logs, pid and status files.
+ui/logs/
+ui/run/
+
+# Local secrets.
+*.env.local
+
+# Evaluation outputs (eval/benchmark_input.py, run_eval.py, ...).
+runs/
+
+# Rewrite logs eval/run_eval.py writes by default when --rewrite-log is not given.
+eval/rewrite_*_terms.log
+eval/*/rewrite_*_terms.log

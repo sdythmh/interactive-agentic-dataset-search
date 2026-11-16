@@ -1,0 +1,47 @@
+{
+ "corpus": "uk",
+ "questions": [
+  {
+   "id": "vague-spatial-01",
+   "question": "spatial datasets",
+   "topic": "spatial-01",
+   "withheld": "published by Rochford District Council",
+   "withheld_dim": "org"
+  },
+  {
+   "id": "vague-spatial-02",
+   "question": "spatial datasets",
+   "topic": "spatial-02",
+   "withheld": "published by the London Borough of Havering",
+   "withheld_dim": "org"
+  },
+  {
+   "id": "vague-region-01",
+   "question": "protected sites and nature conservation designations",
+   "topic": "region-01",
+   "withheld": "in Wales",
+   "withheld_dim": "place"
+  },
+  {
+   "id": "vague-region-02",
+   "question": "population estimates and demographic statistics",
+   "topic": "region-02",
+   "withheld": "for Northern Ireland",
+   "withheld_dim": "place"
+  },
+  {
+   "id": "vague-region-03",
+   "question": "hospital activity and health service statistics",
+   "topic": "region-03",
+   "withheld": "for Scotland",
+   "withheld_dim": "place"
+  },
+  {
+   "id": "vague-graph-02",
+   "question": "datasets related to Owned and Managed Car Parks",
+   "topic": "graph-02",
+   "withheld": "NYMNPA",
+   "withheld_dim": "org"
+  }
+ ]
+}
