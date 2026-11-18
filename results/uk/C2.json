@@ -1,0 +1,106 @@
+{
+ "records": [
+  {
+   "need": "vague-spatial-01",
+   "resolves_to": "spatial-01",
+   "config": "d_agent",
+   "retrieved": [
+    "6abe88f9-9859-4df6-9dab-933a70c7012c",
+    "b6b752ac-2016-4be7-b0f5-38cfa6f253e4",
+    "cd109f68-ca1f-44c3-9e67-86951ab24741",
+    "dd3c65a8-b47a-4e74-9710-4b30953414c1",
+    "bb9e72cb-d4af-4236-abfc-a8229374c720",
+    "811bcf4c-fbbf-4597-aa9c-3d5bd3bfd455",
+    "8c204e92-6d68-46db-ab4d-3b03d6504654",
+    "e8598faf-6464-49de-8ea8-b4d89a201121",
+    "be248b53-0ace-4ed6-9860-87e5784dbd8b",
+    "d4203417-41b4-49e6-8790-82af7df9dabf"
+   ]
+  },
+  {
+   "need": "vague-spatial-02",
+   "resolves_to": "spatial-02",
+   "config": "d_agent",
+   "retrieved": [
+    "6abe88f9-9859-4df6-9dab-933a70c7012c",
+    "b6b752ac-2016-4be7-b0f5-38cfa6f253e4",
+    "cd109f68-ca1f-44c3-9e67-86951ab24741",
+    "dd3c65a8-b47a-4e74-9710-4b30953414c1",
+    "bb9e72cb-d4af-4236-abfc-a8229374c720",
+    "811bcf4c-fbbf-4597-aa9c-3d5bd3bfd455",
+    "8c204e92-6d68-46db-ab4d-3b03d6504654",
+    "e8598faf-6464-49de-8ea8-b4d89a201121",
+    "be248b53-0ace-4ed6-9860-87e5784dbd8b",
+    "d4203417-41b4-49e6-8790-82af7df9dabf"
+   ]
+  },
+  {
+   "need": "vague-region-01",
+   "resolves_to": "region-01",
+   "config": "d_agent",
+   "retrieved": [
+    "609bda4d-f39f-4c6d-9b6b-26955ec29920",
+    "5aac89b5-3838-48f8-8379-518101a78c24",
+    "e1a8b89d-d0cb-4e35-9ea5-91c4416527af",
+    "bd217e38-492f-4585-ad95-1bfc0cca63e9",
+    "4d82692a-f55b-4276-9083-f5ac697869b0",
+    "003566a5-3632-453c-96cc-a13ca8134cab",
+    "255acc10-3c75-4860-b2a1-855eceae5a0c",
+    "10931a79-0de7-45c8-8ea8-f3b5a335b5fb",
+    "678881c7-428b-4bea-80a9-24e224ef459c",
+    "b8944c85-8311-4c1f-8735-d4f8be67aa81"
+   ]
+  },
+  {
+   "need": "vague-region-02",
+   "resolves_to": "region-02",
+   "config": "d_agent",
+   "retrieved": [
+    "24acb29b-d023-465f-9ed2-5351c82c975e",
+    "abc7c4f0-e0dc-4b08-ace8-bcd91bc3ce65",
+    "f5269b92-006b-424d-88f0-499aeeb4da27",
+    "dff5ea2d-7725-41cb-ad2e-d1c3d886c7e9",
+    "a34eab2b-1836-4ac1-8b92-fad59d5007b1",
+    "5eda8410-c119-405d-bcec-67a9ef202850",
+    "5266d8d4-c42a-405f-9961-d3a82fb7161c",
+    "bbc05760-e54a-4e0c-aa76-10302f62cbd5",
+    "7595aea1-c703-4321-938c-9d92885d821a",
+    "f062d84a-9fbc-418f-9ba2-156a3b656444"
+   ]
+  },
+  {
+   "need": "vague-region-03",
+   "resolves_to": "region-03",
+   "config": "d_agent",
+   "retrieved": [
+    "9227403d-044c-49c9-8441-1e5cf94ea811",
+    "a755da27-edcc-4cb6-be1a-dde15570e44d",
+    "cf2baa38-42f8-406a-908e-d5b74b606547",
+    "d2f4b4a0-e606-40f6-a340-3e61934f25d9",
+    "987c9644-3139-4475-9a4f-e1c5dbf23821",
+    "49de2305-273e-4b10-ae7d-755b0e35ddda",
+    "4ba08391-d57f-4142-a6da-9fc620bb3f23",
+    "d52ecd17-9872-440f-a5e6-cf51cbb535ca",
+    "e47dd86a-1ad4-4529-b063-ec265216983a",
+    "4f622f72-91f5-4df1-99cc-b3a6e637cf66"
+   ]
+  },
+  {
+   "need": "vague-graph-02",
+   "resolves_to": "graph-02",
+   "config": "d_agent",
+   "retrieved": [
+    "0523efd0-b810-42f6-a719-fb8b84424255",
+    "6f03b29f-a22a-4e5f-88da-e6d56bccf457",
+    "da25be91-c579-4f01-a1d9-a5ce5a6c2410",
+    "e454dbbf-f2e6-459b-af45-09205e1abcc7",
+    "b92ccca7-42e0-4277-b5e9-b0e81b66b72c",
+    "a09d9d5d-3e06-4c47-b129-86123dec5cef",
+    "383b694b-4470-4a7c-9c59-baf022b8d85a",
+    "d4edac4e-523e-432e-9229-fe220aaa0434",
+    "3c219a98-c7e9-453c-aa48-a8730f132935",
+    "6964dd14-ce62-4787-8717-f2d8454d2395"
+   ]
+  }
+ ]
+}

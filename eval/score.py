@@ -23,7 +23,7 @@ TABLE_A = ["A1", "A2", "A3", "A4"]
 TABLE_B = ["B1", "B2", "B3"]
 METHODS = ["A1", "A2", "A3", "A4", "A5", "B1", "B2", "B3"]
 NAMES = {"A1": "Keyword only (BM25)", "A2": "Dense retrieval only", "A3": "Dense + LLM re-ranking",
-         "A4": "Keyword + dense + cross-encoder", "A5": "IADS (full system)",
+         "A4": "Keyword + dense + cross-encoder", "A5": "InterADS",
          "B1": "- cross-encoder re-ranking", "B2": "- publisher linking",
          "B3": "- decision loop (one round)"}
 METRICS = [("norm", "R@10"), ("ndcg", "nDCG@10"), ("mrr", "MRR@10")]
@@ -121,6 +121,8 @@ def score(manifest):
         golds[c], scored = gold_topics(c)
         keys = {(n, l) for n in scored for l in LEVELS}
         for m in METHODS:
+            if m not in manifest[c]:
+                continue
             rows = rows_for(manifest, c, m, scored)
             assert set(rows) == keys, (c, m, len(rows), len(keys - set(rows)))
             out["rows"]["%s|%s" % (c, m)] = {"rows": len(rows),
@@ -134,6 +136,8 @@ def score(manifest):
         ps = {}
         for c in CORPORA:
             for m in members:
+                if (c, m) not in all_rows:
+                    continue
                 for key, _ in METRICS:
                     a5 = need_means(all_rows[(c, "A5")], golds[c], key)
                     xm = need_means(all_rows[(c, m)], golds[c], key)
@@ -148,12 +152,20 @@ def score(manifest):
         for k, p in holm(ps).items():
             out["diffs"][k]["holm_p"] = p
             out["diffs"][k]["family_size"] = len(ps)
+    # B2 - A5 Recall@10 on the publisher-* query intents
+    out["publisher"] = {}
+    for c in CORPORA:
+        if (c, "B2") in all_rows:
+            a5, b2 = (need_means(all_rows[(c, m)], golds[c], "norm") for m in ("A5", "B2"))
+            pubs = sorted(n for n in a5 if n.startswith("publisher-"))
+            out["publisher"][c] = {"n_topics": len(pubs), "B2_minus_A5": sum(b2[n] - a5[n] for n in pubs) / len(pubs)}
     # clarification
     out["clarify"] = {}
     tables = []
+    has_c3 = all("C3" in manifest["clarify"][c] for c in ["au", "uk"])
     for c in ["au", "uk"]:
         conv = {}
-        for k in ("C1", "C2", "C3"):
+        for k in ("C1", "C2", "C3") if has_c3 else ("C1", "C2"):
             src = manifest["clarify"][c][k]
             conv[k] = {}
             for r in load(src["file"])["records"]:
@@ -161,18 +173,21 @@ def score(manifest):
                     continue
                 mm = metrics(r.get("retrieved"), groups_of(golds[c][r["resolves_to"]]))
                 conv[k][r["need"]] = dict(r, **{"recall@10_norm": mm["norm"]})
-        qs = sorted(set(conv["C1"]) & set(conv["C2"]) & set(conv["C3"]))
-        t = [(c, n, conv["C1"][n]["resolves_to"], conv["C1"][n], conv["C2"][n], conv["C3"][n]) for n in qs]
+        qs = sorted(set.intersection(*(set(v) for v in conv.values())))
+        t = [(c, n, conv["C1"][n]["resolves_to"], conv["C1"][n], conv["C2"][n],
+              conv["C3"][n] if has_c3 else None) for n in qs]
         tables += t
         out["clarify"][c] = {"n": len(t), "C1": sum(x[3]["recall@10_norm"] for x in t) / len(t),
-                             "C2": sum(x[4]["recall@10_norm"] for x in t) / len(t),
-                             "C3": sum(x[5]["recall@10_norm"] for x in t) / len(t),
-                             "recovery": ask_report.recovery(t)}
+                             "C2": sum(x[4]["recall@10_norm"] for x in t) / len(t)}
+        if has_c3:
+            out["clarify"][c].update({"C3": sum(x[5]["recall@10_norm"] for x in t) / len(t),
+                                      "recovery": ask_report.recovery(t)})
     out["clarify"]["pooled"] = {"n": len(tables),
                                 "C1": sum(x[3]["recall@10_norm"] for x in tables) / len(tables),
-                                "C2": sum(x[4]["recall@10_norm"] for x in tables) / len(tables),
-                                "C3": sum(x[5]["recall@10_norm"] for x in tables) / len(tables),
-                                "recovery": ask_report.recovery(tables)}
+                                "C2": sum(x[4]["recall@10_norm"] for x in tables) / len(tables)}
+    if has_c3:
+        out["clarify"]["pooled"].update({"C3": sum(x[5]["recall@10_norm"] for x in tables) / len(tables),
+                                         "recovery": ask_report.recovery(tables)})
     return out
 
 
@@ -180,33 +195,49 @@ def render(out):
     L = ["# Tables", ""]
     head = ("| Method | " + " | ".join("%s %s" % (c.upper(), lab) for c in CORPORA for _, lab in METRICS)
             + " |\n|" + "---|" * 10)
+
+    def present(m):
+        return "%s|%s|norm" % (CORPORA[0], m) in out["cells"]
+
     for title, members in (("Table A: methods", TABLE_A + ["A5"]),
                            ("Table B: ablations", ["A5"] + TABLE_B)):
         L += ["## " + title, "", head]
-        for m in members:
+        for m in filter(present, members):
             L.append("| %s %s | " % (m, NAMES[m]) + " | ".join(
                 f3(out["cells"]["%s|%s|%s" % (c, m, k)]) for c in CORPORA for k, _ in METRICS) + " |")
         L.append("")
-    for title, members in (("Table A: difference to A5 [95% topic-level CI], Holm p (36 tests)", TABLE_A),
-                           ("Table B: difference to A5 [95% topic-level CI], Holm p (27 tests)", TABLE_B)):
+    for title, members, full in (("Table A: difference to A5 [95% topic-level CI], Holm p (36 tests)", TABLE_A, True),
+                                 ("Table B: difference to A5", TABLE_B, False)):
         L += ["## " + title, "", head]
-        for m in members:
+        for m in filter(present, members):
             cells = []
             for c in CORPORA:
                 for k, _ in METRICS:
                     d = out["diffs"]["%s|%s|%s" % (c, m, k)]
-                    cells.append("%+.3f [%+.3f, %+.3f], p_H %s" % (d["mean"], d["ci"][0], d["ci"][1], pf(d["holm_p"])))
+                    cells.append("%+.3f [%+.3f, %+.3f], p_H %s" % (d["mean"], d["ci"][0], d["ci"][1], pf(d["holm_p"]))
+                                 if full else "%+.3f" % d["mean"])
             L.append("| %s %s | " % (m, NAMES[m]) + " | ".join(cells) + " |")
         L.append("")
-    L += ["## Clarification (vague questions, Recall@10)", "",
-          "| portal | n | C1 no question | C2 asked, simulated answer | C3 detail given | (C2-C1)/(C3-C1) [95% CI] |",
-          "|---|---|---|---|---|---|"]
+    if out["publisher"]:
+        L += ["## B2 - A5 on the publisher-* query intents (Recall@10)", "",
+              "| portal | query intents | B2 - A5 |", "|---|---|---|"]
+        for c, x in out["publisher"].items():
+            L.append("| %s | %d | %+.3f |" % (c, x["n_topics"], x["B2_minus_A5"]))
+        L.append("")
+    has_c3 = "C3" in out["clarify"]["pooled"]
+    L += ["## Clarification (vague queries, Recall@10)", "",
+          "| portal | n | C1 no question | C2 asked, simulated answer |"
+          + (" C3 detail given | (C2-C1)/(C3-C1) [95% CI] |" if has_c3 else ""),
+          "|---|---|---|---|" + ("---|---|" if has_c3 else "")]
     for c in ["au", "uk", "pooled"]:
         x = out["clarify"][c]
-        r = x["recovery"]
-        rs = "n/a (denominator CI reaches 0)" if r["R"] is None else "%.3f [%s]" % (
-            r["R"], "n/a" if not r["R_ci"] else "%.3f, %.3f" % tuple(r["R_ci"]))
-        L.append("| %s | %d | %.3f | %.3f | %.3f | %s |" % (c, x["n"], x["C1"], x["C2"], x["C3"], rs))
+        line = "| %s | %d | %.3f | %.3f |" % (c, x["n"], x["C1"], x["C2"])
+        if has_c3:
+            r = x["recovery"]
+            rs = "n/a (denominator CI reaches 0)" if r["R"] is None else "%.3f [%s]" % (
+                r["R"], "n/a" if not r["R_ci"] else "%.3f, %.3f" % tuple(r["R_ci"]))
+            line += " %.3f | %s |" % (x["C3"], rs)
+        L.append(line)
     return "\n".join(L) + "\n"
 
 

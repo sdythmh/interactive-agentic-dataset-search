@@ -1,34 +1,68 @@
-# IADS: Interactive Agentic Dataset Search
+# InterADS: Interactive Agentic Dataset Search
 
-IADS searches three open government data portals (data.gov.au, data.gov.uk and
-catalog.data.gov) from plain-language requests, with a local LLM that plans
-the search, asks back when the request is ambiguous, links the publisher a
-request names, and shows how each result was found.
+InterADS searches three national open-data portals (data.gov.au, data.gov.uk
+and catalog.data.gov) from plain-language queries. It asks back when a query
+is vague, links the publisher a query names, and explains how each result was
+found.
 
-![IADS](figures/teaser.png)
+![InterADS](figures/teaser.png)
 
-Demo video: to be added.
+Demo video: <https://youtu.be/kQANIGx4loE>
 
 ## What the system does
 
-- **Asks.** When a request leaves out which organisation or area is meant and
-  the first results come from several publishers, IADS asks one clarifying
-  question and offers those publishers as answer options.
-- **Links.** When a request names a publisher in its own words ("Britain's
-  national weather service"), a rule collects up to 20 candidate publishers
-  from the portal's publisher list and the LLM picks one or none; the chosen
-  publisher's records are searched as a fifth retrieval path.
-- **Explains.** Every answer cites the records it uses. The comparison view
-  puts the final ten next to a keyword search and a single search round, the
-  Advanced view shows each stage (plan, retrieval paths, decisions,
-  re-ranking), and each record page has a map and a "Why it was found" panel.
+- **Asks.** When a query is vague, InterADS asks the user a clarifying
+  question with publishers as the options, and the reply restarts the search.
+- **Links.** When a query names a publisher in its own words ("Britain's
+  national weather service"), InterADS links the phrase to a publisher on the
+  portal (the Met Office) and searches that publisher's datasets.
+- **Explains.** The answer cites the results, and the interface shows how
+  each result was found: a comparison with keyword search, every stage of the
+  search, and each record's footprint on a map.
 
-The pipeline has five stages: plan (one LLM call writes the search plan;
-publisher linking), retrieve (keyword BM25, dense `bge-small-en-v1.5`,
-spatial and graph paths, fused by RRF with k = 60, pool of 50, deduplicated by
-title), decide (clarification rule; LLM decision loop of up to four rounds),
-rank and answer (`bge-reranker-base` re-ranking with a graph vote; an answer
-with citations and a citation check), and present (the web interface).
+The system has five stages:
+
+1. **Plan.** An LLM call prepares a search plan: the retrieval paths to use,
+   the place the query is about, the publisher or dataset it names, and the
+   relation between datasets it asks for (datasets related to a named
+   dataset, or other datasets of the same publisher).
+2. **Retrieve.** Up to five paths run in parallel:
+   - Keyword: BM25 over title, description, tags and publisher.
+   - Dense retrieval: `bge-small-en-v1.5` embeddings of the query and of each
+     dataset (title, publisher, tags, description).
+   - Spatial: the place is looked up in a table of place names to get its
+     bounding box, and datasets whose footprint overlaps the box are returned.
+   - Graph: datasets are nodes, linked when they share at least three tags
+     (tags used by more than 150 datasets are ignored). When the plan names a
+     dataset and a relation, the path returns the dataset's neighbours ordered
+     by shared tags, or other datasets of the same publisher.
+   - Publisher: up to 20 candidate publishers are collected by name matching
+     (on any word or character trigram of the organisation name, or of an
+     official name proposed by the LLM), and a second LLM call picks one of
+     them or none. If one is picked, the path returns only that publisher's
+     datasets. This step is called publisher linking.
+
+   Keyword and dense retrieval run for every query; the other three paths run
+   only when the plan calls for them. Each path returns up to 50 datasets, and
+   reciprocal rank fusion (RRF, k = 60) merges them into a pool of up to 50
+   candidates.
+3. **Decide.** One pass from Plan to Retrieve is a round. After the first
+   round, a rule asks a clarifying question when the query names no known
+   place, no publisher and no specific dataset, and its top 10 are spread over
+   three or more publishers, none of which holds half of them. The options are
+   the publishers that appear most often in the top 20, and the reply restarts
+   the search with the query followed by the reply. Otherwise, an LLM reads
+   the top 10 and either proceeds or proposes a follow-up query for another
+   round (at most four rounds).
+4. **Rank and answer.** A `bge-reranker-base` cross-encoder scores every
+   candidate against the original query. The top 10 are the results, and an
+   LLM writes a short answer that may cite only these 10.
+5. **Present.** The Standard view shows the results and the cited answer. The
+   Comparison view puts the final top 10 next to the top 10 of keyword search
+   and of the first round, and tags how each record was found (for example,
+   "found via the publisher you asked about" or "after your clarification").
+   The Advanced view shows every stage as it runs. Each record page shows the
+   record's footprint on a map and why it was returned.
 
 ## Test environment
 
@@ -44,8 +78,8 @@ The reported results were produced on one machine:
 These commands have not been run from this repository as released.
 
 ```bash
-conda create -n iads python=3.11
-conda activate iads
+conda create -n interads python=3.11
+conda activate interads
 pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
 pip install -r requirements.txt
 ```
@@ -56,8 +90,8 @@ embedder (`BAAI/bge-small-en-v1.5`) and the re-ranker
 first use.
 
 Use Python 3.11 for the evaluation scripts: from Python 3.12 on, `sum()` over
-floats rounds differently, which can move the reported p-values in the last
-digits.
+floats rounds differently, which can change the last digits of the computed
+scores.
 
 ## Start the backends
 
@@ -79,10 +113,9 @@ portals and one Neo4j server per portal (bolt ports 7687 au, 7688 uk, 7689 us).
 These commands have not been run from this repository as released.
 
 `benchmark/samples_{au,uk,us}.csv` give the id and portal URL of each sampled
-record (8,000 per portal). A script that fetches these records by id is not
-provided yet and will be added later. The metadata are not in this repository
-(see [DATA.md](DATA.md)), and the scores in the paper were computed on our
-copy of the records.
+record (8,000 per portal). The metadata are not in this repository (see
+[DATA.md](DATA.md)), and the scores in the paper were computed on our copy of
+the records.
 
 **Fetching.** The existing harvest and sampling entry points below harvest a
 whole portal and then draw a sample; on today's portals they do not give the
@@ -126,22 +159,21 @@ paper: the comparison view, the grounded clarification rule and publisher
 linking. Set `UI_PYTHON` if `python` on the `PATH` is not the environment's
 interpreter. Stop everything with `bash ui/stop_ui.sh`.
 
-Three example requests:
+The two demonstration scenarios in the paper:
 
-| Portal | Request | What it shows |
-|---|---|---|
-| Australia | garbage collection days | a clarifying question with publishers as options (for example, answer "City of Greater Dandenong") |
-| United Kingdom | weather records from Britain's national weather service | publisher linking to the Met Office |
-| Australia | earthquake data from the national geology agency | a second search round that links Geoscience Australia |
+| Scenario | Portal | Request | What it shows |
+|---|---|---|---|
+| S1 | Australia | garbage collection days | the results come from many councils, so InterADS asks which council is meant; picking "City of Greater Dandenong" updates the results, and the Comparison view shows the results before and after the clarification |
+| S2 | United Kingdom | weather records from Britain's national weather service | in the Advanced view, the search plan card shows that InterADS linked the phrase to the Met Office and lists the 15 publishers it considered |
 
-## Run the baselines and ablations
+## Run the evaluation
 
 These commands have not been run from this repository as released.
 
-The evaluation runs every sub-question of the benchmark through the system.
-They are long: the full system takes about 30 seconds per sub-question on the
-test machine, 200 sub-questions per portal. Run from a fresh shell, so no
-switch from an earlier command is still set. For each portal (`au` shown):
+The evaluation runs every query of the benchmark through the system. The runs
+are long: the full system takes about 30 seconds per query on the test
+machine, 200 queries per portal. Run from a fresh shell, so no switch from an
+earlier command is still set. For each portal (`au` shown):
 
 ```bash
 python eval/benchmark_input.py --corpus au --out runs/au
@@ -156,23 +188,17 @@ bash eval/run_clear.sh au env RERANK_MODE=off LLM_RERANK_LOG=runs/au/A2A3.llm.js
 # A4 keyword + dense + cross-encoder
 bash eval/run_clear.sh au python eval/run_eval.py \
     --gold runs/au/topics.json --configs b_fused --out runs/au/A4.json
-# A5 IADS
+# A5 InterADS
 bash eval/run_clear.sh au env ENTITY_RESOLVE=link_path python eval/run_eval.py \
     --gold runs/au/topics.json --configs d_agent --out runs/au/A5.json
-# B1 without re-ranking
-bash eval/run_clear.sh au env ENTITY_RESOLVE=link_path RERANK_MODE=off python eval/run_eval.py \
-    --gold runs/au/topics.json --configs d_agent --out runs/au/B1.json
-# B2 without publisher linking
+# B2 InterADS without publisher linking
 bash eval/run_clear.sh au python eval/run_eval.py \
     --gold runs/au/topics.json --configs d_agent --out runs/au/B2.json
-# B3 without the decision loop (one round)
-bash eval/run_clear.sh au env ENTITY_RESOLVE=link_path python eval/run_eval.py \
-    --gold runs/au/topics.json --configs c_routed --out runs/au/B3.json
 ```
 
-Clarification (18 vague questions, au and uk only; `au` shown). C1 sends the
-vague question as is, C2 lets the system ask and a simulated user answer with
-the left-out detail, C3 adds the left-out detail to the question:
+Clarification (18 vague queries, au and uk only; `au` shown). C1 sends the
+vague query as is; in C2 the system asks a clarifying question and gets
+simulated user replies with the removed detail:
 
 ```bash
 bash eval/run_clear.sh au python eval/run_vague.py --vague runs/au/vague.json \
@@ -180,27 +206,26 @@ bash eval/run_clear.sh au python eval/run_vague.py --vague runs/au/vague.json \
 bash eval/run_clear.sh au env ASK_STYLE=grounded ASK_MAX=1 USER_SIM=template \
     python eval/run_vague.py --vague runs/au/vague.json \
     --gold runs/au/topics.json --condition ask --configs d_agent --out runs/au/C2.json
-bash eval/run_clear.sh au python eval/run_vague.py --vague runs/au/vague.json \
-    --gold runs/au/topics.json --condition oracle --configs d_agent --out runs/au/C3.json
 ```
 
-## Recompute the tables from `benchmark/`
-
-This command has been run only with `eval/runs_template.json` changed to point
-at our original run files, which are not in this repository.
+## Recompute the paper's numbers from `results/`
 
 ```bash
-python eval/score.py --runs eval/runs_template.json --out runs/scores.json
+python eval/score.py --runs eval/runs_paper.json
 ```
 
-`eval/runs_template.json` names the run files written above. The script
-recomputes Recall@10, nDCG@10 and MRR@10 from each row's top ten against the
-relevance groups in `benchmark/gold_<portal>.json` (records with the same
-title form one group), averages over each topic's four sub-questions and then
-over topics, and prints the method table, the ablation table, the paired
-differences to IADS with topic-level confidence intervals and Holm-corrected
-p-values, and the clarification table. LLM output can vary between machines,
-so new runs give close but not identical numbers.
+`results/` holds the top ten of every query in the runs reported in the paper
+(see [DATA.md](DATA.md)), and `eval/runs_paper.json` names these files. The
+script recomputes Recall@10, nDCG@10 and MRR@10 from each top ten against
+`benchmark/gold_<portal>.json`, averages over the four queries of each query
+intent and then over query intents, and gives Table 3 (A1–A5) and the numbers
+in the Discussion: the drop in Recall@10 without publisher linking (B2) on the
+144 publisher queries, and Recall@10 on the 18 vague queries without (C1) and
+with (C2) the clarifying question. The Discussion also reports that publisher
+linking picks the right publisher for 78 of the 144 publisher queries; this
+count needs the publisher names of the gold records, which are not in this
+repository, so it cannot be recomputed from the files here. LLM output can
+vary between machines, so new runs give close but not identical numbers.
 
 ## Tests
 
@@ -225,15 +250,16 @@ in this repository and are skipped with a message.
 ## License
 
 The code is released under the MIT License (see [LICENSE](LICENSE)). The
-files in `benchmark/` are released under CC BY 4.0 (see [DATA.md](DATA.md)).
+files in `benchmark/` and `results/` are released under CC BY 4.0 (see
+[DATA.md](DATA.md)).
 
 ## Citation
 
 The paper is under review at the WWW 2027 Demo Track.
 
 ```bibtex
-@inproceedings{han2027iads,
-  title     = {Interactive Agentic Dataset Search (IADS)},
+@inproceedings{han2027interads,
+  title     = {Interactive Agentic Dataset Search: An Agent That Asks, Links, and Explains over National Open-Data Portals},
   author    = {Han, Minghao and Qi, Jianzhong},
   booktitle = {Companion Proceedings of the ACM Web Conference 2027 (WWW '27), Demo Track},
   year      = {2027},

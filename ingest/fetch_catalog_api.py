@@ -363,7 +363,7 @@ class Client:
         self.session = session or requests.Session()
         if session is None:
             self.session.headers.update(
-                {"User-Agent": "iads-harvester/0.3 (us harvest)"})
+                {"User-Agent": "interads-harvester/0.3 (us harvest)"})
         self.clock, self.sleep, self.wall = clock, sleep, wall
         self.base = cfg("CATALOG_API_BASE")
         # The rule is >= 1 s; a larger value slows the harvest down, never speeds it up.

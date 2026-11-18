@@ -30,22 +30,10 @@
     "config": "d_agent"
    }
   ],
-  "B1": [
-   {
-    "file": "runs/au/B1.json",
-    "config": "d_agent"
-   }
-  ],
   "B2": [
    {
     "file": "runs/au/B2.json",
     "config": "d_agent"
-   }
-  ],
-  "B3": [
-   {
-    "file": "runs/au/B3.json",
-    "config": "c_routed"
    }
   ]
  },
@@ -80,22 +68,10 @@
     "config": "d_agent"
    }
   ],
-  "B1": [
-   {
-    "file": "runs/uk/B1.json",
-    "config": "d_agent"
-   }
-  ],
   "B2": [
    {
     "file": "runs/uk/B2.json",
     "config": "d_agent"
-   }
-  ],
-  "B3": [
-   {
-    "file": "runs/uk/B3.json",
-    "config": "c_routed"
    }
   ]
  },
@@ -130,22 +106,10 @@
     "config": "d_agent"
    }
   ],
-  "B1": [
-   {
-    "file": "runs/us/B1.json",
-    "config": "d_agent"
-   }
-  ],
   "B2": [
    {
     "file": "runs/us/B2.json",
     "config": "d_agent"
-   }
-  ],
-  "B3": [
-   {
-    "file": "runs/us/B3.json",
-    "config": "c_routed"
    }
   ]
  },
@@ -158,10 +122,6 @@
    "C2": {
     "file": "runs/au/C2.json",
     "config": "d_agent"
-   },
-   "C3": {
-    "file": "runs/au/C3.json",
-    "config": "d_agent"
    }
   },
   "uk": {
@@ -171,10 +131,6 @@
    },
    "C2": {
     "file": "runs/uk/C2.json",
-    "config": "d_agent"
-   },
-   "C3": {
-    "file": "runs/uk/C3.json",
     "config": "d_agent"
    }
   }

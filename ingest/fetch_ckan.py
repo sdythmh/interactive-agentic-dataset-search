@@ -37,7 +37,7 @@ ORG_LIST = "/action/organization_list"
 PACKAGE_LIST = "/action/current_package_list_with_resources"
 
 SESSION = requests.Session()
-SESSION.headers.update({"User-Agent": "iads-harvester/0.3"})
+SESSION.headers.update({"User-Agent": "interads-harvester/0.3"})
 
 # Topic mode (--topics): harvest by search terms instead of by organisation.
 TOPICS = config.HARVEST_TOPICS
